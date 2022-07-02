@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SNLM_v0._00
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Advertise : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Dashboard.aspx");
         }
     }
 }

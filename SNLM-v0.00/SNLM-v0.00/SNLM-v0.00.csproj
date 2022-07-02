@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Advertise.aspx" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\flex-slider.css" />
     <Content Include="assets\css\font-awesome.css" />
@@ -115,6 +116,7 @@
     <Content Include="assets\js\scrollreveal.min.js" />
     <Content Include="assets\js\slick.js" />
     <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="Bills.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="dist\css\bootstrap-grid.css" />
     <Content Include="dist\css\bootstrap-grid.min.css" />
@@ -138,12 +140,14 @@
     <Content Include="dist\js\bootstrap.esm.min.js" />
     <Content Include="dist\js\bootstrap.js" />
     <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="GestDetails.aspx" />
     <Content Include="images\bk.png" />
     <Content Include="images\img.svg" />
     <Content Include="images\PIKA_MUG.png" />
     <Content Include="Login.aspx" />
     <Content Include="LOGINCSS.css" />
     <Content Include="script.js" />
+    <Content Include="Setting.aspx" />
     <Content Include="STYLECSS.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -155,12 +159,33 @@
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Advertise.aspx.cs">
+      <DependentUpon>Advertise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advertise.aspx.designer.cs">
+      <DependentUpon>Advertise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bills.aspx.cs">
+      <DependentUpon>Bills.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bills.aspx.designer.cs">
+      <DependentUpon>Bills.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestDetails.aspx.cs">
+      <DependentUpon>GestDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestDetails.aspx.designer.cs">
+      <DependentUpon>GestDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -170,6 +195,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.aspx.cs">
+      <DependentUpon>Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting.aspx.designer.cs">
+      <DependentUpon>Setting.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\Flaticon.woff" />
