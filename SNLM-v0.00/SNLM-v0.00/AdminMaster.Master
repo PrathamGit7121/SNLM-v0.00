@@ -42,7 +42,7 @@
           </a>
         </li>
         <li>
-          <a href="Setting.aspx" ID="menu4" onclick="selectset()">
+          <a href="Setting.aspx" ID="menu4">
             <i class='bx bx-cog' ></i>
             <span class="links_name">Setting</span>
           </a>
