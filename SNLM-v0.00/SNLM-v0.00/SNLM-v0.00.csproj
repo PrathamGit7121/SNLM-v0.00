@@ -57,11 +57,111 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\flex-slider.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\lightbox.css" />
+    <Content Include="assets\css\owl-carousel.css" />
+    <Content Include="assets\css\templatemo-klassy-cafe.css" />
+    <Content Include="assets\fonts\flexslider-icon.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\slick.svg" />
+    <Content Include="assets\images\about-thumb-01.jpg" />
+    <Content Include="assets\images\about-thumb-02.jpg" />
+    <Content Include="assets\images\about-thumb-03.jpg" />
+    <Content Include="assets\images\about-video-bg.jpg" />
+    <Content Include="assets\images\chefs-01.jpg" />
+    <Content Include="assets\images\chefs-02.jpg" />
+    <Content Include="assets\images\chefs-03.jpg" />
+    <Content Include="assets\images\close.png" />
+    <Content Include="assets\images\klassy-logo.png" />
+    <Content Include="assets\images\loading.gif" />
+    <Content Include="assets\images\menu-item-01.jpg" />
+    <Content Include="assets\images\menu-item-02.jpg" />
+    <Content Include="assets\images\menu-item-03.jpg" />
+    <Content Include="assets\images\menu-item-04.jpg" />
+    <Content Include="assets\images\menu-item-05.jpg" />
+    <Content Include="assets\images\next.png" />
+    <Content Include="assets\images\prev.png" />
+    <Content Include="assets\images\reservation-b.png" />
+    <Content Include="assets\images\reservation-bg.jpg" />
+    <Content Include="assets\images\slide-01.jpg" />
+    <Content Include="assets\images\slide-02.jpg" />
+    <Content Include="assets\images\slide-03.jpg" />
+    <Content Include="assets\images\tab-icon-01.png" />
+    <Content Include="assets\images\tab-icon-02.png" />
+    <Content Include="assets\images\tab-icon-03.png" />
+    <Content Include="assets\images\tab-item-01.png" />
+    <Content Include="assets\images\tab-item-02.png" />
+    <Content Include="assets\images\tab-item-03.png" />
+    <Content Include="assets\images\tab-item-04.png" />
+    <Content Include="assets\images\tab-item-05.png" />
+    <Content Include="assets\images\tab-item-06.png" />
+    <Content Include="assets\images\top-left-b.png" />
+    <Content Include="assets\images\top-left-bb.png" />
+    <Content Include="assets\images\top-left-bg.jpg" />
+    <Content Include="assets\images\white-logo.png" />
+    <Content Include="assets\js\accordions.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\datepicker.js" />
+    <Content Include="assets\js\imgfix.min.js" />
+    <Content Include="assets\js\isotope.js" />
+    <Content Include="assets\js\jquery-2.1.0.min.js" />
+    <Content Include="assets\js\jquery.counterup.min.js" />
+    <Content Include="assets\js\lightbox.js" />
+    <Content Include="assets\js\owl-carousel.js" />
+    <Content Include="assets\js\popper.js" />
+    <Content Include="assets\js\scrollreveal.min.js" />
+    <Content Include="assets\js\slick.js" />
+    <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="dist\css\bootstrap-grid.css" />
+    <Content Include="dist\css\bootstrap-grid.min.css" />
+    <Content Include="dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="dist\css\bootstrap-reboot.css" />
+    <Content Include="dist\css\bootstrap-reboot.min.css" />
+    <Content Include="dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="dist\css\bootstrap-utilities.css" />
+    <Content Include="dist\css\bootstrap-utilities.min.css" />
+    <Content Include="dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\css\bootstrap.rtl.css" />
+    <Content Include="dist\css\bootstrap.rtl.min.css" />
+    <Content Include="dist\js\bootstrap.bundle.js" />
+    <Content Include="dist\js\bootstrap.bundle.min.js" />
+    <Content Include="dist\js\bootstrap.esm.js" />
+    <Content Include="dist\js\bootstrap.esm.min.js" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="images\bk.png" />
+    <Content Include="images\img.svg" />
+    <Content Include="images\PIKA_MUG.png" />
     <Content Include="Login.aspx" />
     <Content Include="LOGINCSS.css" />
+    <Content Include="script.js" />
+    <Content Include="STYLECSS.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -72,6 +172,41 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\flexslider-icon.eot" />
+    <Content Include="assets\fonts\flexslider-icon.ttf" />
+    <Content Include="assets\fonts\flexslider-icon.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\slick.eot" />
+    <Content Include="assets\fonts\slick.ttf" />
+    <Content Include="assets\fonts\slick.woff" />
+    <Content Include="dist\css\bootstrap-grid.css.map" />
+    <Content Include="dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="dist\css\bootstrap-reboot.css.map" />
+    <Content Include="dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="dist\css\bootstrap-utilities.css.map" />
+    <Content Include="dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\css\bootstrap.min.css.map" />
+    <Content Include="dist\css\bootstrap.rtl.css.map" />
+    <Content Include="dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="dist\js\bootstrap.bundle.js.map" />
+    <Content Include="dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="dist\js\bootstrap.esm.js.map" />
+    <Content Include="dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="dist\js\bootstrap.js.map" />
+    <Content Include="dist\js\bootstrap.min.js.map" />
+    <Content Include="AdminMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
