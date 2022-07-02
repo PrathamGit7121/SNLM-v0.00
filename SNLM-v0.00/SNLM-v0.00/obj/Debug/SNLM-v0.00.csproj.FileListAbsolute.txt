@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\LIOMS 1.1.1.0\DMHS\DMHS\SNLM-v0.00\SNLM-v0.00\SNLM-v0.00\bin\SNLM-v0.00.dll
+C:\Users\admin\Desktop\LIOMS 1.1.1.0\DMHS\DMHS\SNLM-v0.00\SNLM-v0.00\SNLM-v0.00\bin\SNLM-v0.00.pdb
+C:\Users\admin\Desktop\LIOMS 1.1.1.0\DMHS\DMHS\SNLM-v0.00\SNLM-v0.00\SNLM-v0.00\obj\Debug\SNLM-v0.00.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\LIOMS 1.1.1.0\DMHS\DMHS\SNLM-v0.00\SNLM-v0.00\SNLM-v0.00\obj\Debug\SNLM-v0.00.dll
+C:\Users\admin\Desktop\LIOMS 1.1.1.0\DMHS\DMHS\SNLM-v0.00\SNLM-v0.00\SNLM-v0.00\obj\Debug\SNLM-v0.00.pdb
