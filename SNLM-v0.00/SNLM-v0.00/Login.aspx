@@ -30,7 +30,7 @@
                     <asp:TextBox ID="PasswordID" placeholder="Password" runat="server"></asp:TextBox>
                     <i class="fas fa-lock"></i>
                 </div>
-                <asp:Button ID="LoginID" runat="server" Text="Login" CssClass="submit" OnClick="Button1_Click"/>
+                <asp:Button ID="LoginID" runat="server" Text="Login" CssClass="submit" OnClick="LoginID_Click"/>
             </form>
         </div>
     </section>
