@@ -11,7 +11,8 @@ namespace SNLM_v0._00
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+            Response.Write("<script>alert('Kidding')</script>");
         }
 
     }
