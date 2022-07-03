@@ -14,9 +14,17 @@ namespace SNLM_v0._00
 
         }
 
+<<<<<<< HEAD
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("Dashboard.aspx");
         }
+=======
+        protected void LoginID_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dashboard.aspx");
+        }
+
+>>>>>>> f5aa8234eed4eb9133c3c1e086eb0453491f7914
     }
 }

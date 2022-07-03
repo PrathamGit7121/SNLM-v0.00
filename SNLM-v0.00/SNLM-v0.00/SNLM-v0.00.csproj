@@ -149,6 +149,7 @@
     <Content Include="script.js" />
     <Content Include="Setting.aspx" />
     <Content Include="STYLECSS.css" />
+    <Content Include="Test-Dash-Raw.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +202,13 @@
     </Compile>
     <Compile Include="Setting.aspx.designer.cs">
       <DependentUpon>Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test-Dash-Raw.aspx.cs">
+      <DependentUpon>Test-Dash-Raw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test-Dash-Raw.aspx.designer.cs">
+      <DependentUpon>Test-Dash-Raw.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

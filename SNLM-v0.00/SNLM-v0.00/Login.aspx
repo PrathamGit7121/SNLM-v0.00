@@ -23,14 +23,18 @@
 
             <form id="Form1" class="login-form" runat="server">
                 <div class="form-control">
-                    <input type="text" placeholder="Username">
+                    <asp:TextBox ID="UserNameID" placeholder="Username" runat="server"></asp:TextBox>
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="form-control">
-                    <input type="password" placeholder="Password">
+                    <asp:TextBox ID="PasswordID" placeholder="Password" runat="server"></asp:TextBox>
                     <i class="fas fa-lock"></i>
                 </div>
+<<<<<<< HEAD
                 <asp:Button ID="Button1" runat="server" Text="Login" CssClass="submit" OnClick="Button1_Click"/>
+=======
+                <asp:Button ID="LoginID" runat="server" Text="Login" CssClass="submit" OnClick="LoginID_Click"/>
+>>>>>>> f5aa8234eed4eb9133c3c1e086eb0453491f7914
             </form>
         </div>
     </section>
