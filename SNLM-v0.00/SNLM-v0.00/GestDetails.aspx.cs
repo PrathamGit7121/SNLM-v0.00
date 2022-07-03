@@ -14,9 +14,5 @@ namespace SNLM_v0._00
 
         }
 
-        protected void SAVEButton_Click(object sender, EventArgs e)
-        {
-            Response.Write("<script>alert('Kidding :)')</script>");
-        }
     }
 }
