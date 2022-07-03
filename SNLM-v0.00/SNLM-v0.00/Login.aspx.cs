@@ -18,6 +18,5 @@ namespace SNLM_v0._00
         {
             Response.Redirect("Dashboard.aspx");
         }
-
     }
 }
