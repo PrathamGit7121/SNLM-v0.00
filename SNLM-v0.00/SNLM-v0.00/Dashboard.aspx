@@ -7,7 +7,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 01</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RMOLButton" CssClass="btn btn-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomOneLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
                         </div>
                         <div class="indicator">
                             <i class='bx bx-up-arrow-alt'></i>
@@ -19,7 +19,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 02</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RMTLButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomTwoLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
                         </div>
                         <div class="indicator">
                             <i class='bx bx-up-arrow-alt'></i>
@@ -30,7 +30,9 @@
                 <div class="box">
                     <div class="right-side">
                         <div class="box-topic">Room 03</div>
-                        <div class="number">$12,876</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="RoomThreeLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                        </div>
                         <div class="indicator">
                             <i class='bx bx-up-arrow-alt'></i>
                             <span class="text">Up from yesterday</span>
@@ -41,7 +43,9 @@
                 <div class="box">
                     <div class="right-side">
                         <div class="box-topic">Room 04</div>
-                        <div class="number">11,086</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="RoomFourLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                        </div>
                         <div class="indicator">
                             <i class='bx bx-down-arrow-alt down'></i>
                             <span class="text">Down From Today</span>
@@ -52,7 +56,9 @@
                 <div class="box">
                     <div class="right-side">
                         <div class="box-topic">Room 05</div>
-                        <div class="number">11,086</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="RoomfiveLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                        </div>
                         <div class="indicator">
                             <i class='bx bx-down-arrow-alt down'></i>
                             <span class="text">Down From Today</span>

@@ -13,21 +13,48 @@ namespace SNLM_v0._00 {
     public partial class Dashboard {
         
         /// <summary>
-        /// RMOLButton control.
+        /// RoomOneLockButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RMOLButton;
+        protected global::System.Web.UI.WebControls.Button RoomOneLockButton;
         
         /// <summary>
-        /// RMTLButton control.
+        /// RoomTwoLockButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RMTLButton;
+        protected global::System.Web.UI.WebControls.Button RoomTwoLockButton;
+        
+        /// <summary>
+        /// RoomThreeLockButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button RoomThreeLockButton;
+        
+        /// <summary>
+        /// RoomFourLockButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button RoomFourLockButton;
+        
+        /// <summary>
+        /// RoomfiveLockButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button RoomfiveLockButton;
     }
 }
