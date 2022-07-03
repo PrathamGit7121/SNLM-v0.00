@@ -14,7 +14,7 @@ namespace SNLM_v0._00
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void LoginButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Dashboard.aspx");
         }
