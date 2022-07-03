@@ -143,7 +143,7 @@
                             </div>
                             <div class="card-footer text-right">
                                 <div class="btn btn-outline-primary">Preview</div>
-                                <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" />
+                                <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
                             </div>
                         </div>
                     </div>
