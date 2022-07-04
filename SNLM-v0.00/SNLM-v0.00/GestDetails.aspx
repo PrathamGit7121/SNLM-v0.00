@@ -142,7 +142,11 @@
                                 </div>
                             </div>
                             <div class="card-footer text-right">
+<<<<<<< HEAD
                                 <div class="btn btn-outline-primary" onclick="openPopUp()">Preview</div>
+=======
+                                <div class="btn btn-outline-primary">Preview</div>
+>>>>>>> 0bd3d81214155fc693d280b3e967ef1488177bac
                                 <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
                             </div>
                         </div>
