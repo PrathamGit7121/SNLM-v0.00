@@ -142,8 +142,8 @@
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                <div class="btn btn-outline-primary">Preview</div>
-                                <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" />
+                                <div class="btn btn-outline-primary" onclick="openPopUp()">Preview</div>
+                                <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
                             </div>
                         </div>
                     </div>
@@ -151,5 +151,16 @@
             </div>
         </div>
     </section>
+    
+    <script>
+        function openPopUp(){
+        const modal_container = document.getElementById('modal_container');
+            modal_container.classList.add("show");
+        }
 
+        function closePopUp(){
+        const modal_container = document.getElementById('modal_container');
+            modal_container.classList.remove("show");
+        }
+    </script>
 </asp:Content>
