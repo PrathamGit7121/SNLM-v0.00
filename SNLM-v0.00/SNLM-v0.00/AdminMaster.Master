@@ -8,86 +8,116 @@
     <link rel="stylesheet" href="STYLECSS.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-    <form id="Form1" runat="server">
-  <div class="sidebar">
-    <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">Samarth Nivas</span>
-    </div>
-      <ul class="nav-links">
-        <li>
-          <a href="Dashboard.aspx" class="active" ID="menu1" onclick="selectdb()">
-            <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="GestDetails.aspx" ID="menu2" onclick="selectgd()">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Gest Detais</span>
-          </a>
-        </li>
-        <li>
-          <a href="Bills.aspx" ID="menu3" onclick="selectbl()">
-            <i class='bx bx-book-alt' ></i>
-            <span class="links_name">Bill</span>
-          </a>
-        </li>
-        <li>
-          <a href="Advertise.aspx">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Advertise page</span>
-          </a>
-        </li>
-        <li>
-          <a href="Setting.aspx" ID="menu4">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Setting</span>
-          </a>
-        </li>
-        <li class="log_out">
-          <a href="Login.aspx">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Log out</span>
-          </a>
-        </li>
-      </ul>
-  </div>
-  <section class="home-section">
-    <nav >
-      <div class="sidebar-button">
-        <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard"><asp:Label ID="Label1" runat="server" Text=""></asp:Label></span>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search...">
-        <i class='bx bx-search' ></i>
-      </div>
-      <div class="profile-details">
-        <img src="images/PIKA_MUG.png" alt="">
-        <span class="admin_name">Name</span>
-      </div>
-    </nav>
-</section>
-<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-</asp:ContentPlaceHolder>
-  <script>
+      <style>
+          .modal-container {
+              top: 95px;
+              position: absolute;
+              height: auto;
+              width: auto;
+              opacity: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              pointer-events: none;
+              transition: opacity 0.3s ease;
+          }
 
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".sidebarBtn");
-      sidebarBtn.onclick = function() {
-          sidebar.classList.toggle("active");
-          if(sidebar.classList.contains("active")){
-              sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-          }else
-              sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
-      }
- </script>
-<script src="assets\js\bootstrap.bundle.min.js"></script>     
-    <!-- 
+              .modal-container.show {
+                  pointer-events: auto;
+                  opacity: 1;
+              }
+
+          .modal {
+              background-color: #fff;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+              padding: 30px 30px;
+              height: auto;
+              width: 825px;
+              max-width: 100%;
+              text-align: center;
+          }
+      </style>
+   </head>
+<body id="Preview">
+    <form id="Form1" runat="server">
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bxl-c-plus-plus'></i>
+                <span class="logo_name">Samarth Nivas</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="Dashboard.aspx" class="active" id="menu1" onclick="selectdb()">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="GestDetails.aspx" id="menu2" onclick="selectgd()">
+                        <i class='bx bx-user'></i>
+                        <span class="links_name">Gest Detais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Bills.aspx" id="menu3" onclick="selectbl()">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="links_name">Bill</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Advertise.aspx">
+                        <i class='bx bx-heart'></i>
+                        <span class="links_name">Advertise page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Setting.aspx" id="menu4">
+                        <i class='bx bx-cog'></i>
+                        <span class="links_name">Setting</span>
+                    </a>
+                </li>
+                <li class="log_out">
+                    <a href="Login.aspx">
+                        <i class='bx bx-log-out'></i>
+                        <span class="links_name">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
+            <nav>
+                <div class="sidebar-button">
+                    <i class='bx bx-menu sidebarBtn'></i>
+                    <span class="dashboard">
+                        <asp:Label ID="Label1" runat="server" Text=""></asp:Label></span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class='bx bx-search'></i>
+                </div>
+                <div class="profile-details">
+                    <img src="images/PIKA_MUG.png" alt="">
+                    <span class="admin_name">Name</span>
+                </div>
+            </nav>
+        </section>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <script>
+
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarBtn = document.querySelector(".sidebarBtn");
+            sidebarBtn.onclick = function() {
+                sidebar.classList.toggle("active");
+                if(sidebar.classList.contains("active")){
+                    sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+                }else
+                    sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        </script>
+        <script src="assets\js\bootstrap.bundle.min.js"></script>
+        <!-- 
         script src="select.js"></!--script-->
     </form>
 </body>

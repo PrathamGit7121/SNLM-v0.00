@@ -214,13 +214,83 @@
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                <div class="btn btn-outline-primary" onclick="openPopUp()">Preview</div>
-                                <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
+                                    <a href="#Preview">
+                                        <div class="btn btn-outline-primary" id="PreviewButton" onclick="openPopUp()">
+                                            Preview
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-------------------------------------
+            Preview Tab
+        -------------------------------------->
+
+
+        <div class="modal-container" id="modal_container">
+            <div class="container">
+                <div class="card text">
+                    <div class="card-header">
+                        <h4>Preview</h4>
+                    </div>
+
+        <!-------------------------------------
+            Preview content
+        -------------------------------------->
+
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <asp:Label for="FullName" ID="Label2" Text="Full Name" runat="server"></asp:Label>
+                                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label for="ContactNoID" ID="Label3" Text="Mobile/Phone No." runat="server"></asp:Label>
+                                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <asp:Label for="AddressID" ID="Label4" Text="Address" runat="server"></asp:Label>
+                                <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label for="NationalityID" ID="Label5" Text="Nationality" runat="server"></asp:Label>
+                                <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label for="OccupationID" ID="Label6" Text="Servie or Bussiness" runat="server"></asp:Label>
+                                <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
+
+        <!-------------------------------------
+            Preview Buttons
+        -------------------------------------->
+
+                    <div class="card-footer text-right">
+                        <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
+                        <a href="#PreviewButton">
+                            <div class="btn btn-outline-primary" onclick="closePopUp()">Cancel</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
+      <script>
+          function openPopUp(){
+          const modal_container = document.getElementById('modal_container');
+              modal_container.classList.add("show");
+          }
+
+          function closePopUp(){
+          const modal_container = document.getElementById('modal_container');
+              modal_container.classList.remove("show");
+          }
+     </script>
 </asp:Content>
