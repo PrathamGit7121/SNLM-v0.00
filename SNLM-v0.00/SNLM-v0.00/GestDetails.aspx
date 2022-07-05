@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="GestDetails.aspx.cs" Inherits="SNLM_v0._00.GestDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<section class="cnt-section">
+    <section class="cnt-section">
         <div class="home-content">
             <div class="overview-boxes">
                 <div class="box" style="width: auto;">
@@ -10,18 +10,18 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <H5>GEST DETAILS</H5>
+                                <h5>GEST DETAILS</h5>
                             </div>
                             <div class="card-body">
 
 
-                                <!-- Row One -->
+                                <!-- Row One (room No) -->
 
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <div class="form-group">
                                             <asp:Label ID="Label1" for="DropNoOfPersonID" runat="server" Text="Room No."></asp:Label>
-                                            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
+                                            <asp:DropDownList ID="DropRoomNo" runat="server" CssClass="form-control">
                                                 <asp:ListItem>choose one</asp:ListItem>
                                                 <asp:ListItem>1</asp:ListItem>
                                                 <asp:ListItem>2</asp:ListItem>
@@ -34,7 +34,7 @@
                                 </div>
 
 
-                                <!-- Row Two -->
+                                <!-- Row Two (Name, contact, address, nationality, occupation) -->
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
@@ -66,14 +66,16 @@
                                     <div class="form-group col-md-6">
                                         <div class="form-group">
                                             <asp:Label ID="DropNoOfPersonLabel" for="DropNoOfPersonID" runat="server" Text="No Of Person"></asp:Label>
-                                            <asp:DropDownList ID="DropNoOfPersonID" runat="server" CssClass="form-control">
-                                                <asp:ListItem>choose one</asp:ListItem>
-                                                <asp:ListItem>1</asp:ListItem>
-                                                <asp:ListItem>2</asp:ListItem>
-                                                <asp:ListItem>3</asp:ListItem>
-                                                <asp:ListItem>4</asp:ListItem>
-                                                <asp:ListItem>5</asp:ListItem>
-                                                <asp:ListItem>6</asp:ListItem>
+                                            <asp:DropDownList ID="DropNoOfPersonID" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="DropNoOfPersonID_Changed">
+                                                <asp:ListItem Text="1" Value="One"></asp:ListItem>
+                                                <asp:ListItem Text="2" Value="Two"></asp:ListItem>
+                                                <asp:ListItem Text="3" Value="Three"></asp:ListItem>
+                                                <asp:ListItem Text="4" Value="Four"></asp:ListItem>
+                                                <asp:ListItem Text="5" Value="Five"></asp:ListItem>
+                                                <asp:ListItem Text="6" Value="Six"></asp:ListItem>
+                                                <asp:ListItem Text="7" Value="Seven"></asp:ListItem>
+                                                <asp:ListItem Text="8" Value="Eight"></asp:ListItem>
+                                                <asp:ListItem Text="9" Value="Nine"></asp:ListItem>
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -87,24 +89,94 @@
                                                 <asp:Label for="AgeOne" ID="AgeLabel1" Text="age" runat="server"></asp:Label>
                                                 <asp:TextBox ID="AgeOne" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
                                             </div>
-                                            <div class="form-group col-md-8">
-                                                <asp:TextBox ID="PersonTwo" runat="server" CssClass="form-control" Placeholder="Person 2" Visible="false"></asp:TextBox>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <asp:TextBox ID="AgeTwo" runat="server" CssClass="form-control" Placeholder="Age" Visible="false"></asp:TextBox>
-                                            </div>
-                                            <div class="form-group col-md-8">
-                                                <asp:TextBox ID="PersonThree" runat="server" CssClass="form-control" Placeholder="Person 3" Visible="false"></asp:TextBox>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <asp:TextBox ID="AgeThree" runat="server" CssClass="form-control" Placeholder="Age" Visible="false"></asp:TextBox>
-                                            </div>
                                         </div>
+
+                                        <!-- From person "two" to person "Nine" Name and Age Id -->
+
+                                        <asp:Label ID="Person2" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonTwo" runat="server" CssClass="form-control" Placeholder="Person 2"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeTwo" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person3" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonThree" runat="server" CssClass="form-control" Placeholder="Person 3"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeThree" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person4" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonFour" runat="server" CssClass="form-control" Placeholder="Person 4"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeFour" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person5" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonFive" runat="server" CssClass="form-control" Placeholder="Person 5"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeFive" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person6" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonSix" runat="server" CssClass="form-control" Placeholder="Person 6"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeSix" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person7" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonSeven" runat="server" CssClass="form-control" Placeholder="Person 7"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeSeven" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person8" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonEight" runat="server" CssClass="form-control" Placeholder="Person 8"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeEight" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
+                                        <asp:Label ID="Person9" runat="server" Text="" Visible="false">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <asp:TextBox ID="PersonNine" runat="server" CssClass="form-control" Placeholder="Person 9"></asp:TextBox>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <asp:TextBox ID="AgeNine" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </asp:Label>
                                     </div>
                                 </div>
 
-
-                                <!-- Row Three -->
+<!-- Row Three (Arrival from, perpose of visit, date of arival, address to proceding, departure, duration vehical no, id proof) -->
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
@@ -151,16 +223,4 @@
             </div>
         </div>
     </section>
-    
-    <script>
-        function openPopUp(){
-        const modal_container = document.getElementById('modal_container');
-            modal_container.classList.add("show");
-        }
-
-        function closePopUp(){
-        const modal_container = document.getElementById('modal_container');
-            modal_container.classList.remove("show");
-        }
-    </script>
 </asp:Content>
