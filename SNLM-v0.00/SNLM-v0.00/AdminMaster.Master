@@ -90,11 +90,7 @@
                 <div class="sidebar-button">
                     <i class='bx bx-menu sidebarBtn'></i>
                     <span class="dashboard">
-                        <asp:Label ID="Label1" runat="server" Text=""></asp:Label></span>
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <i class='bx bx-search'></i>
+                        <asp:Label ID="Label1" runat="server" Text="Dashboard"></asp:Label></span>
                 </div>
                 <div class="profile-details">
                     <img src="images/PIKA_MUG.png" alt="">
@@ -117,8 +113,18 @@
             }
         </script>
         <script src="assets\js\bootstrap.bundle.min.js"></script>
-        <!-- 
-        script src="select.js"></!--script-->
+        
+      <script type="text/javascript">
+          function openPopUp(){
+          const modal_container = document.getElementById('modal_container');
+              modal_container.classList.add("show");
+          }
+
+          function closePopUp(){
+          const modal_container = document.getElementById('modal_container');
+              modal_container.classList.remove("show");
+          }
+     </script>
     </form>
 </body>
 </html>

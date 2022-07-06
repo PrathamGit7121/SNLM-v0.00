@@ -20,7 +20,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <div class="form-group">
-                                            <asp:Label ID="Label1" for="DropNoOfPersonID" runat="server" Text="Room No."></asp:Label>
+                                            <asp:Label ID="Label1" for="DropRoomNo" runat="server" Text="Room No."></asp:Label>
                                             <asp:DropDownList ID="DropRoomNo" runat="server" CssClass="form-control">
                                                 <asp:ListItem>choose one</asp:ListItem>
                                                 <asp:ListItem>1</asp:ListItem>
@@ -232,42 +232,102 @@
 
 
         <div class="modal-container" id="modal_container">
-            <div class="container">
+            <div class="container"><div class="container">
                 <div class="card text">
                     <div class="card-header">
                         <h4>Preview</h4>
                     </div>
 
-        <!-------------------------------------
+                    <!-------------------------------------
             Preview content
         -------------------------------------->
 
                     <div class="card-body">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <asp:Label for="FullName" ID="Label2" Text="Full Name" runat="server"></asp:Label>
-                                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:Label ID="PrRoomNoLabel" Text="Full Name :" runat="server"></asp:Label>
+                                <asp:Label ID="PrRoomNo" Text="" runat="server"></asp:Label>
                             </div>
+                        </div>
+                        <div class="form-row">
                             <div class="form-group col-md-6">
-                                <asp:Label for="ContactNoID" ID="Label3" Text="Mobile/Phone No." runat="server"></asp:Label>
-                                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:Label ID="PrContactLabel" Text="Mobile/Phone No. :" runat="server"></asp:Label>
+                                <asp:Label ID="PrContactID" Text="" runat="server"></asp:Label>
                             </div>
                             <div class="form-group col-md-12">
-                                <asp:Label for="AddressID" ID="Label4" Text="Address" runat="server"></asp:Label>
-                                <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:Label ID="PrAddressLabel" Text="Address :" runat="server"></asp:Label>
+                                <asp:Label ID="PrAddressID" Text="" runat="server"></asp:Label>
                             </div>
                             <div class="form-group col-md-6">
-                                <asp:Label for="NationalityID" ID="Label5" Text="Nationality" runat="server"></asp:Label>
-                                <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:Label ID="PrNationalityLabel" Text="Nationality :" runat="server"></asp:Label>
+                                <asp:Label ID="PrNationality" Text="" runat="server"></asp:Label>
                             </div>
                             <div class="form-group col-md-6">
-                                <asp:Label for="OccupationID" ID="Label6" Text="Servie or Bussiness" runat="server"></asp:Label>
-                                <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:Label ID="PrOccapationLabel" Text="Servie or Bussiness :" runat="server"></asp:Label>
+                                <asp:Label ID="PrOccapation" Text="" runat="server"></asp:Label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrNoOfPersonLabel" Text="Persons :" runat="server"></asp:Label>
+                                <asp:Label ID="PrNoOfPerson" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="form-row">
+                                    <div class="form-group col-md-10">
+                                        <asp:Label ID="PrP1NameLabel" Text="Person :" runat="server"></asp:Label><br />
+                                        <asp:Label ID="PrP1Name" Text="" runat="server"></asp:Label>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <asp:Label ID="PrP1AgeLabel" Text="Age :" runat="server"></asp:Label><br />
+                                        <asp:Label ID="PrP1Age" Text="" runat="server"></asp:Label>
+                                    </div>
+                                    <div class="form-group col-md-10">
+                                        <asp:Label ID="PrP2Name" Text="" runat="server"></asp:Label>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <asp:Label ID="PrP2Age" Text="" runat="server"></asp:Label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrArivalFromLabel" Text="Arriver From :" runat="server"></asp:Label>
+                                <asp:Label ID="PrArivalFrom" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrPerposeLabel" Text="Perpose Of Visit :" runat="server"></asp:Label>
+                                <asp:Label ID="PrPerpose" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrDateOfArivalLabel" Text="Date Of Arival :" runat="server"></asp:Label>
+                                <asp:Label ID="PrDateOfArival" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrDateOfDepartureLabel" Text="Date Of Departure :" runat="server"></asp:Label>
+                                <asp:Label ID="PrDateOfDeparture" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <asp:Label ID="PrAddProcedingLabel" Text="Address To Proceding :" runat="server"></asp:Label>
+                                <asp:Label ID="PrAddProceding" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrDurationLabel" Text="Duration Of Day :" runat="server"></asp:Label>
+                                <asp:Label ID="PrDuration" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrVehicalNOLabel" Text="Vehical No :" runat="server"></asp:Label>
+                                <asp:Label ID="PrVehicalNo" Text="" runat="server"></asp:Label>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <asp:Label ID="PrIdProofLabel" Text="Id Proof :" runat="server"></asp:Label>
+                                <!-- Tuch add kar kay te mala nay mahit @SUMIT -->
                             </div>
                         </div>
                     </div>
 
-        <!-------------------------------------
+                    <!-------------------------------------
             Preview Buttons
         -------------------------------------->
 
@@ -278,19 +338,9 @@
                         </a>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </section>
     
-      <script>
-          function openPopUp(){
-          const modal_container = document.getElementById('modal_container');
-              modal_container.classList.add("show");
-          }
-
-          function closePopUp(){
-          const modal_container = document.getElementById('modal_container');
-              modal_container.classList.remove("show");
-          }
-     </script>
 </asp:Content>
