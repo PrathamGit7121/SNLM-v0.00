@@ -322,6 +322,8 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <asp:Label ID="PrIdProofLabel" Text="Id Proof :" runat="server"></asp:Label>
+                                
+                                <asp:Label ID="PrIdProof" Text="Id Proof :" runat="server"></asp:Label>
                                 <!-- Tuch add kar kay te mala nay mahit @SUMIT -->
                             </div>
                         </div>
