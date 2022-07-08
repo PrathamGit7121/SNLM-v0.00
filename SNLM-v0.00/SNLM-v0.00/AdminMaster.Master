@@ -55,13 +55,13 @@
                 </li>
                 <li>
                     <a href="GestDetails.aspx" id="menu2" onclick="selectgd()">
-                        <i class='bx bx-user'></i>
+                        <i class='bx bx-list-ul'></i>
                         <span class="links_name">Gest Detais</span>
                     </a>
                 </li>
                 <li>
                     <a href="Bills.aspx" id="menu3" onclick="selectbl()">
-                        <i class='bx bx-book-alt'></i>
+                        <i class='bx bx-pie-chart-alt-2'></i>
                         <span class="links_name">Bill</span>
                     </a>
                 </li>
@@ -72,8 +72,14 @@
                     </a>
                 </li>
                 <li>
+                    <a href="Reports.aspx">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="links_name">Reports</span>
+                    </a>
+                </li>
+                <li>
                     <a href="Setting.aspx" id="menu4">
-                        <i class='bx bx-cog'></i>
+                        <i class='bx bx-user'></i>
                         <span class="links_name">Setting</span>
                     </a>
                 </li>
