@@ -17,7 +17,7 @@ namespace SNLM_v0._00
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["SNLMConnectionString"].ConnectionString);
         }
-<<<<<<< HEAD
+
         protected void LoginID_Click(object sender, EventArgs e)
         {
 
@@ -57,12 +57,6 @@ namespace SNLM_v0._00
             {
                 Response.Write(ex);
             }
-=======
-
-        protected void LoginID_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Dashboard.aspx");
->>>>>>> 0bd3d81214155fc693d280b3e967ef1488177bac
         }
     }
 }

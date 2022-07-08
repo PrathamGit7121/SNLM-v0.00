@@ -7,7 +7,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 01</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RoomOneLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomOneLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" OnClick="RoomOneLockButton_Click"/>
                         </div>
                         <div class="indicator">
                             <i class='bx bx-up-arrow-alt'></i>
@@ -19,7 +19,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 02</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RoomTwoLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomTwoLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" OnClick="RoomTwoLockButton_Click" />
                         </div>
                         <div class="indicator">
                             <i class='bx bx-up-arrow-alt'></i>
@@ -31,7 +31,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 03</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RoomThreeLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomThreeLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" OnClick="RoomThreeLockButton_Click"/>
                         </div>
                         <div class="indicator">
                             <i class='bx bx-up-arrow-alt'></i>
@@ -43,7 +43,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 04</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RoomFourLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomFourLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" OnClick="RoomFourLockButton_Click" />
                         </div>
                         <div class="indicator">
                             <i class='bx bx-down-arrow-alt down'></i>
@@ -55,7 +55,7 @@
                     <div class="right-side">
                         <div class="box-topic">Room 05</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RoomfiveLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" />
+                            <asp:Button ID="RoomfiveLockButton" CssClass="btn btn-outline-success" runat="server" Text="Lock In" OnClick="RoomfiveLockButton_Click" BackColor="" />
                         </div>
                         <div class="indicator">
                             <i class='bx bx-down-arrow-alt down'></i>

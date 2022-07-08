@@ -10,7 +10,7 @@
 
                         <div class="card">
                             <div class="card-header">
-                                Featured
+                                <h4>Featured</h4>
                             </div>
                             <div class="card-body">
                                 <div class="form-row">

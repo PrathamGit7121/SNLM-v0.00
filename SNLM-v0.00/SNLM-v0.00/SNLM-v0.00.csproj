@@ -82,6 +82,7 @@
     <Content Include="assets\images\menu-item-03.jpg" />
     <Content Include="assets\images\menu-item-04.jpg" />
     <Content Include="assets\images\menu-item-05.jpg" />
+    <Content Include="assets\images\menu-thiba.png" />
     <Content Include="assets\images\next.png" />
     <Content Include="assets\images\prev.png" />
     <Content Include="assets\images\reservation-b.png" />
@@ -98,6 +99,7 @@
     <Content Include="assets\images\tab-item-04.png" />
     <Content Include="assets\images\tab-item-05.png" />
     <Content Include="assets\images\tab-item-06.png" />
+    <Content Include="assets\images\Thiba_Palace_Ratnagiri_-_panoramio.jpg" />
     <Content Include="assets\images\top-left-b.png" />
     <Content Include="assets\images\top-left-bb.png" />
     <Content Include="assets\images\top-left-bg.jpg" />
@@ -149,7 +151,9 @@
     <Content Include="script.js" />
     <Content Include="Setting.aspx" />
     <Content Include="STYLECSS.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminMaster.Master.cs">
@@ -239,6 +243,7 @@
     <Content Include="dist\js\bootstrap.js.map" />
     <Content Include="dist\js\bootstrap.min.js.map" />
     <Content Include="AdminMaster.Master" />
+    <Content Include="assets\images\101.webp" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
