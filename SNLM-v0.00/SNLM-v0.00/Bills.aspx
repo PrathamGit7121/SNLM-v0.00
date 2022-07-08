@@ -6,7 +6,9 @@
                 <div class="box" style="width:auto;">
                     <div class="right-side">
 
-                        <!--  form start here  -->
+        <!-------------------------------------
+              form start here 
+        -------------------------------------->
 
                         <div class="card">
                             <div class="card-header">
@@ -14,12 +16,14 @@
                             </div>
                             <div class="card-body">
 
-
-                                <!-- Row One (room No) -->
+                                
+        <!-------------------------------------
+            Row One (room No)
+        -------------------------------------->
 
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
-                                        <div class="form-group">
+                                        <div class="form-group"><!--Room No-->
                                             <asp:Label ID="BillRoomNoLabel" for="BillDropRoomNo" runat="server" Text="Room No."></asp:Label>
                                             <asp:DropDownList ID="BillDropRoomNo" runat="server" CssClass="form-control">
                                                 <asp:ListItem>choose Room</asp:ListItem>
@@ -34,33 +38,41 @@
                                 </div>
 
 
-                                <!-- Row Two (Name, contact, address, nationality, occupation) -->
+        <!-------------------------------------
+             Row Two (Name, contact, address, nationality, occupation)
+        -------------------------------------->
 
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Full Name-->
                                         <asp:Label for="BillFullName" ID="FullNameLabe" Text="Full Name" runat="server"></asp:Label>
                                         <asp:TextBox ID="BillFullName" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <asp:Label for="ContactNoID" ID="BillOrderLabel" Text="Order" runat="server"></asp:Label>
-                                        <asp:TextBox ID="BillOrderID" runat="server" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Offline Bill-->
                                         <asp:Label for="BillOfflineID" ID="BillOfflineLabel" Text="Offline Amount" runat="server"></asp:Label>
                                         <asp:TextBox ID="BillOfflineID" runat="server" CssClass="form-control" placeholder="Rs." OnTextChanged="BillOfflineID_TextChanged"></asp:TextBox>
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Online Bill-->
                                         <asp:Label for="BillOnlineID" ID="BillOnlineLabel" Text="Online Amount" runat="server"></asp:Label>
                                         <asp:TextBox ID="BillOnlineID" runat="server" CssClass="form-control" placeholder="Rs." OnTextChanged="BillOnlineID_TextChanged"></asp:TextBox>
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Bank Name-->
+                                        <asp:Label ID="BillBankNameLabel" runat="server" Text="Bank Name"></asp:Label>
+                                        <asp:DropDownList ID="BillBankName" runat="server" CssClass="form-control">
+                                            <asp:ListItem>choose Bank</asp:ListItem>
+                                            <asp:ListItem>Bank Of India</asp:ListItem>
+                                            <asp:ListItem>Bank of Maharastra</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </div>
+                                    <div class="form-group col-md-6"><!--Total Bill-->
                                         <asp:Label ID="BillTotalLabel" Text="TOtal Amount :" runat="server"></asp:Label>
-                                        <h3><asp:Label ID="BillTotalID" runat="server" Text=""></asp:Label></h3>
+                                        <h3>
+                                            <asp:Label ID="BillTotalID" runat="server" Text=""></asp:Label>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                    <a href="#Preview">
+                                    <a href="#Preview"><!--Preview Button-->
                                         <div class="btn btn-outline-primary" id="PreviewButton" onclick="openPopUp()">
                                             Preview
                                         </div>
@@ -84,48 +96,48 @@
                                 <h4>Preview</h4>
                             </div>
 
-                            <!-------------------------------------
+        <!-------------------------------------
             Preview content
         -------------------------------------->
 
                             <div class="card-body">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Preview Room No.-->
                                         <asp:Label ID="preRoomNoLabel" Text="Room No :" runat="server"></asp:Label>
                                         <asp:Label ID="PreRoomNo" Text="" runat="server"></asp:Label>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Preview Full Name-->
                                         <asp:Label ID="PreFullNameLabel" Text="Gest Name :" runat="server"></asp:Label>
                                         <asp:Label ID="PreFullName" Text="" runat="server"></asp:Label>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <asp:Label ID="PreOrderLabel" Text="Order :" runat="server"></asp:Label>
-                                        <asp:Label ID="PreOrder" Text="" runat="server"></asp:Label>
-                                    </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Preview Offline payment-->
                                         <asp:Label ID="PreOfflineLabel" Text="Offline Payment :" runat="server"></asp:Label>
                                         <asp:Label ID="PreOffline" Text="" runat="server"></asp:Label>
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-6"><!--Preview Online Payment-->
                                         <asp:Label ID="PreOnlineLabel" Text="Online Payment :" runat="server"></asp:Label>
                                         <asp:Label ID="PreOnline" Text="" runat="server"></asp:Label>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <asp:Label ID="PreTotalLabel" Text="Total Amount :" runat="server"></asp:Label>
-                                        <asp:Label ID="Label2" Text="" runat="server"></asp:Label>
+                                    <div class="form-group col-md-6"><!--Preview Bank Name-->
+                                        <asp:Label ID="PrBankNameLabel" Text="Total Amount :" runat="server"></asp:Label>
+                                        <asp:Label ID="PrBankName" Text="" runat="server"></asp:Label>
+                                    </div>
+                                    <div class="form-group col-md-6"><!--Preview Total Amount-->
+                                        <asp:Label ID="PrTotalLabel" Text="Total Amount :" runat="server"></asp:Label>
+                                        <asp:Label ID="PrTotal" Text="" runat="server"></asp:Label>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-------------------------------------
+        <!-------------------------------------
             Preview Buttons
         -------------------------------------->
 
-                            <div class="card-footer text-right">
+                            <div class="card-footer text-right"><!--Preview Save button-->
                                 <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" />
-                                <a href="#body">
+                                <a href="#body"><!--Preview Cancel Button-->
                                     <div class="btn btn-outline-primary" onclick="closePopUp()">Cancel</div>
                                 </a>
                             </div>

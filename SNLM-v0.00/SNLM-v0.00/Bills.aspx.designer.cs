@@ -49,24 +49,6 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.TextBox BillFullName;
         
         /// <summary>
-        /// BillOrderLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillOrderLabel;
-        
-        /// <summary>
-        /// BillOrderID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BillOrderID;
-        
-        /// <summary>
         /// BillOfflineLabel control.
         /// </summary>
         /// <remarks>
@@ -101,6 +83,24 @@ namespace SNLM_v0._00 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox BillOnlineID;
+        
+        /// <summary>
+        /// BillBankNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label BillBankNameLabel;
+        
+        /// <summary>
+        /// BillBankName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList BillBankName;
         
         /// <summary>
         /// BillTotalLabel control.
@@ -157,24 +157,6 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.Label PreFullName;
         
         /// <summary>
-        /// PreOrderLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PreOrderLabel;
-        
-        /// <summary>
-        /// PreOrder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PreOrder;
-        
-        /// <summary>
         /// PreOfflineLabel control.
         /// </summary>
         /// <remarks>
@@ -211,22 +193,40 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.Label PreOnline;
         
         /// <summary>
-        /// PreTotalLabel control.
+        /// PrBankNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PreTotalLabel;
+        protected global::System.Web.UI.WebControls.Label PrBankNameLabel;
         
         /// <summary>
-        /// Label2 control.
+        /// PrBankName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label PrBankName;
+        
+        /// <summary>
+        /// PrTotalLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PrTotalLabel;
+        
+        /// <summary>
+        /// PrTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PrTotal;
         
         /// <summary>
         /// SAVEButton control.
