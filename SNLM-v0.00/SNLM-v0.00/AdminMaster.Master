@@ -9,6 +9,23 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
+          .Grid {
+                border-color: gray;
+                height: auto;
+                width: 550px;
+                font-size: 18px;
+          }
+          .Grid th {
+              text-align: center;
+              background-color: var(--primary);
+              color: #fff;
+              font-family: 'Poppins', sans-serif;
+          }
+          .Grid td{
+              text-align: center;
+              background-color: #fff;
+              height: 20px;
+          }
           .modal-container {
               top: 95px;
               position: absolute;

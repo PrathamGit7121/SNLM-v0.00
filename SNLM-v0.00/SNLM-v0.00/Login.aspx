@@ -27,7 +27,7 @@
                     <i class="fas fa-user"></i>
                 </div>
                 <div class="form-control">
-                    <asp:TextBox ID="PasswordID" placeholder="Password" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="PasswordID" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
                     <i class="fas fa-lock"></i>
                 </div>
                 <asp:Button ID="LoginID" runat="server" Text="Login" CssClass="submit" OnClick="LoginID_Click"/>

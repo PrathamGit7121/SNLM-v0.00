@@ -13,14 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Klassy Cafe - Restaurant HTML Template</title>
-<!--
-    
-TemplateMo 558 Klassy Cafe
 
-https://templatemo.com/tm-558-klassy-cafe
-
--->
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
@@ -43,24 +36,17 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- Header Logo -->
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
+                        <a href="#" class="logo">
+                            <img src="assets/images/klassy-logo.png">
                         </a>
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#menu">Popular Destinations</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Features</a>
-                                <ul>
-                                    <li><a href="#">Features Page 1</a></li>
-                                    <li><a href="#">Features Page 2</a></li>
-                                    <li><a href="#">Features Page 3</a></li>
-                                    <li><a href="#">Features Page 4</a></li>
-                                </ul>
-                            </li>
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
-                            <li class="scroll-to-section"><a href="Dashboard.aspx">Admin</a></li> 
+                            <asp:Label ID="HideAdmin" runat="server" Text="">
+                            <li class="scroll-to-section"><a href="Dashboard.aspx">Admin</a></li>
+                            </asp:Label> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -121,7 +107,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 <div class="col-lg-4">
                     <div class="section-heading">
                         <h6>Popular Destinations</h6>
-                        <h2>From historical cities to natural spiendours. come see the best of Konkan!</h2>
+                        <h2>From historical cities to natural spiendours. come see the best of Ratnagiri!</h2>
                     </div>
                 </div>
             </div>
@@ -210,20 +196,20 @@ https://templatemo.com/tm-558-klassy-cafe
                             <h6>Contact Us</h6>
                             <h2>Here You Can Make A Reservation Or make a call</h2>
                         </div>
-                        <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
+                        <p><B style="font-size:18px">Dr. B. N. Sawant Road, New Bhaji Market Road,<br />Ratnagiri-415612 Maharastra(India)</B></p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="phone">
                                     <i class="fa fa-phone"></i>
-                                    <h4>Phone Numbers</h4>
-                                    <span><a href="#">080-090-0990</a><br><a href="#">080-090-0880</a></span>
+                                    <h4>Monile Numbers</h4>
+                                    <span><a href="#">9422634217</a>&nbsp<b>/</b>&nbsp<a href="#">9422433717</a></span>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="message">
-                                    <i class="fa fa-envelope"></i>
-                                    <h4>Emails</h4>
-                                    <span><a href="#">hello@company.com</a><br><a href="#">info@company.com</a></span>
+                                    <i class="fa fa-phone"></i>
+                                    <h4>Phone Numbers</h4>
+                                    <span><a href="#">02352-220932</a><br /></span>
                                 </div>
                             </div>
                         </div>
@@ -231,24 +217,24 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" runat="server">
                           <div class="row">
                             <div class="col-lg-12">
-                                <h4>Table Reservation</h4>
+                                <h4>Room Booking</h4>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                                  <asp:TextBox ID="AddFullName" runat="server" placeholder="Your Name*" ></asp:TextBox>
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                                  <asp:TextBox ID="ADDEmail" runat="server" TextMode="Email" placeholder="Your Email Address" ></asp:TextBox>
                             </fieldset>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                               <fieldset>
-                                <input name="phone" type="text" id="phone" placeholder="Phone Number*" required="">
+                                  <asp:TextBox ID="TextBox3" runat="server" TextMode="Phone" placeholder="Phone No*" ></asp:TextBox>
                               </fieldset>
                             </div>
                             <div class="col-md-6 col-sm-12">
@@ -271,35 +257,26 @@ https://templatemo.com/tm-558-klassy-cafe
                               </fieldset>
                             </div>
                             <div class="col-lg-6">
-                                <div id="filterDate2">    
-                                  <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                    <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                    <div class="input-group-addon" >
-                                      <span class="glyphicon glyphicon-th"></span>
-                                    </div>
-                                  </div>
-                                </div>   
+                                  <asp:TextBox ID="TextBox2" runat="server" TextMode="Date"></asp:TextBox> 
                             </div>
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
-                                <select value="time" name="time" id="time">
-                                    <option value="time">Time</option>
-                                    <option name="Breakfast" id="Breakfast">Breakfast</option>
-                                    <option name="Lunch" id="Lunch">Lunch</option>
-                                    <option name="Dinner" id="Dinner">Dinner</option>
-                                </select>
+                                  <asp:DropDownList ID="DropDownList1" runat="server">
+                                      <asp:ListItem>Time</asp:ListItem>
+                                      <asp:ListItem>Breakfast</asp:ListItem>
+                                      <asp:ListItem>Lunch</asp:ListItem>
+                                      <asp:ListItem>Dinner</asp:ListItem>
+                                  </asp:DropDownList>
                               </fieldset>
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                                  <asp:TextBox ID="TextBox1" class="form-control" runat="server" placeholder="Message here" TextMode="MultiLine"></asp:TextBox>
                               </fieldset>
                             </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Make A Reservation</button>
-                              </fieldset>
-                            </div>
+                              <div class="col-lg-12">
+                                  <asp:Button ID="AddChkAvilablity" runat="server" CssClass="btn btn-outline-danger" Text="Check Avilablity" />
+                              </div>
                           </div>
                         </form>
                     </div>
@@ -364,9 +341,8 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
-                        
-                        <br>Design: TemplateMo</p>
+                        <p><B style="font-size:15px">Dr. B. N. Sawant Road, New Bhaji Market Road,
+                            <br />Ratnagiri-415612 Maharastra(India)</B></p>
                     </div>
                 </div>
             </div>
