@@ -7,10 +7,9 @@
                     <div class="right-side">
                         <div class="box-topic">Room 01</div>
                         <div class="room-lockbtn">
-                            <asp:Button ID="RoomOneLockButton" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomOneLockButton_Click"/>
+                            <asp:Button ID="RoomOneLockButton" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomOneLockButton_Click" />
                         </div>
                         <div class="indicator">
-                            <i class='bx bx-up-arrow-alt'></i>
                             <span class="text">Dashboard</span>
                         </div>
                     </div>
@@ -22,7 +21,6 @@
                             <asp:Button ID="RoomTwoLockButton" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomTwoLockButton_Click" />
                         </div>
                         <div class="indicator">
-                            <i class='bx bx-up-arrow-alt'></i>
                             <span class="text">Up from yesterday</span>
                         </div>
                     </div>
@@ -34,7 +32,6 @@
                             <asp:Button ID="RoomThreeLockButton" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomThreeLockButton_Click"/>
                         </div>
                         <div class="indicator">
-                            <i class='bx bx-up-arrow-alt'></i>
                             <span class="text">Up from yesterday</span>
                         </div>
                     </div>
@@ -46,7 +43,6 @@
                             <asp:Button ID="RoomFourLockButton" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomFourLockButton_Click" />
                         </div>
                         <div class="indicator">
-                            <i class='bx bx-down-arrow-alt down'></i>
                             <span class="text">Down From Today</span>
                         </div>
                     </div>
@@ -58,7 +54,6 @@
                             <asp:Button ID="RoomfiveLockButton" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomfiveLockButton_Click" BackColor="" />
                         </div>
                         <div class="indicator">
-                            <i class='bx bx-down-arrow-alt down'></i>
                             <span class="text">Down From Today</span>
                         </div>
                     </div>
