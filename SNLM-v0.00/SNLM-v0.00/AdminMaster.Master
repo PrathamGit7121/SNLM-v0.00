@@ -65,7 +65,7 @@
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="Dashboard.aspx" class="active" id="menu1" onclick="selectdb()">
+                    <a href="Dashboard.aspx" id="menu1" onclick="selectdb()">
                         <i class='bx bx-grid-alt'></i>
                         <span class="links_name">Dashboard</span>
                     </a>
