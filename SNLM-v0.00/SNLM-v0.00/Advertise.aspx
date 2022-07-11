@@ -42,8 +42,8 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#menu">Popular Destinations</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
                             <asp:Label ID="HideAdmin" runat="server" Text="">
                             <li class="scroll-to-section"><a href="Dashboard.aspx">Admin</a></li>
                             </asp:Label> 

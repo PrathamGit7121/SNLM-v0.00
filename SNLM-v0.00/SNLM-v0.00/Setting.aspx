@@ -7,7 +7,7 @@
                 <div class="recent-sales box" style="width: 425px;">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Dashboard</h3>
+                            <h3>USER INFO</h3>
                         </div>
                         <div class="card-body">
                             <div class="form-row">
@@ -33,7 +33,7 @@
                                 <div class="form-group col-md-6">
                                     <asp:Label ID="SelRoleLabel" for="SelRole" runat="server" Text="Role"></asp:Label>
                                     <asp:DropDownList ID="SelRole" runat="server" CssClass="form-control">
-                                        <asp:ListItem>choose one</asp:ListItem>
+                                        <asp:ListItem>Role</asp:ListItem>
                                         <asp:ListItem>Admin</asp:ListItem>
                                         <asp:ListItem>User</asp:ListItem>
                                     </asp:DropDownList>
@@ -53,15 +53,15 @@
                     <div class="sales-details">
                     <div class="card">
                         <div class="card-header">
-                            <h3>Users Details</h3>
+                            <h3>USER DETAILS </h3>
                         </div>
                         <div class="card-body">
                             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="Grid" DataSourceID="SqlDataSource1">
                                 <Columns >
-                                    <asp:BoundField DataField="Name" HeaderText="name" SortExpression="name" />
-                                    <asp:BoundField DataField="Username" HeaderText="username" SortExpression="username" />
-                                    <asp:BoundField DataField="Role" HeaderText="role" SortExpression="role" />
-                                    <asp:BoundField DataField="Password" HeaderText="password" SortExpression="password" />
+                                    <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="name" />
+                                    <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="username" />
+                                    <asp:BoundField DataField="Role" HeaderText="Role" SortExpression="role" />
+                                    <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="password" />
                                 </Columns>
                             </asp:GridView>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SNLMConnectionString %>" SelectCommand="SELECT [name], [role], [username], [password] FROM [UserDetails]"></asp:SqlDataSource>
