@@ -32,6 +32,7 @@
                                                 <asp:ListItem>3</asp:ListItem>
                                                 <asp:ListItem>4</asp:ListItem>
                                                 <asp:ListItem>5</asp:ListItem>
+                                                <asp:ListItem>6</asp:ListItem>
                                             </asp:DropDownList>
                                         </div>
                                     </div>
