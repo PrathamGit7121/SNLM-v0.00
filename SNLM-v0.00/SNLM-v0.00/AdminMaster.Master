@@ -55,13 +55,13 @@
                 </li>
                 <li>
                     <a href="GestDetails.aspx" id="menu2" onclick="selectgd()">
-                        <i class='bx bx-user'></i>
+                        <i class='bx bx-list-ul'></i>
                         <span class="links_name">Gest Detais</span>
                     </a>
                 </li>
                 <li>
                     <a href="Bills.aspx" id="menu3" onclick="selectbl()">
-                        <i class='bx bx-book-alt'></i>
+                        <i class='bx bx-pie-chart-alt-2'></i>
                         <span class="links_name">Bill</span>
                     </a>
                 </li>
@@ -72,8 +72,14 @@
                     </a>
                 </li>
                 <li>
+                    <a href="Reports.aspx">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="links_name">Reports</span>
+                    </a>
+                </li>
+                <li>
                     <a href="Setting.aspx" id="menu4">
-                        <i class='bx bx-cog'></i>
+                        <i class='bx bx-user'></i>
                         <span class="links_name">Setting</span>
                     </a>
                 </li>
@@ -90,11 +96,7 @@
                 <div class="sidebar-button">
                     <i class='bx bx-menu sidebarBtn'></i>
                     <span class="dashboard">
-                        <asp:Label ID="Label1" runat="server" Text=""></asp:Label></span>
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Search...">
-                    <i class='bx bx-search'></i>
+                        <asp:Label ID="Label1" runat="server" Text="Dashboard"></asp:Label></span>
                 </div>
                 <div class="profile-details">
                     <img src="images/PIKA_MUG.png" alt="">
@@ -117,8 +119,18 @@
             }
         </script>
         <script src="assets\js\bootstrap.bundle.min.js"></script>
-        <!-- 
-        script src="select.js"></!--script-->
+        
+      <script type="text/javascript">
+          function openPopUp(){
+          const modal_container = document.getElementById('modal_container');
+              modal_container.classList.add("show");
+          }
+
+          function closePopUp(){
+          const modal_container = document.getElementById('modal_container');
+              modal_container.classList.remove("show");
+          }
+     </script>
     </form>
 </body>
 </html>
