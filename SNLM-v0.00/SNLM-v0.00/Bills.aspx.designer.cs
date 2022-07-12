@@ -13,6 +13,15 @@ namespace SNLM_v0._00 {
     public partial class Bills {
         
         /// <summary>
+        /// gestBill control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gestBill;
+        
+        /// <summary>
         /// BillRoomNoLabel control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,24 @@ namespace SNLM_v0._00 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label BillTotalID;
+        
+        /// <summary>
+        /// PREVIEWButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button PREVIEWButton;
+        
+        /// <summary>
+        /// BillContainer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl BillContainer;
         
         /// <summary>
         /// preRoomNoLabel control.
@@ -236,5 +263,14 @@ namespace SNLM_v0._00 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SAVEButton;
+        
+        /// <summary>
+        /// CancelPreview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CancelPreview;
     }
 }

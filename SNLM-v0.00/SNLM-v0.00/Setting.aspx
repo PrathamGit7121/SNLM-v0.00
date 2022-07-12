@@ -66,10 +66,6 @@
                             </asp:GridView>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SNLMConnectionString %>" SelectCommand="SELECT [name], [role], [username], [password] FROM [UserDetails]"></asp:SqlDataSource>
                         </div>
-                        <div class="card-footer text-center">
-
-                        </div>
-
                     </div>
                 </div>
 

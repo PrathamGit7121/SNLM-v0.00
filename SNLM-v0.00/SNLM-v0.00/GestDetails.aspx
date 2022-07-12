@@ -20,7 +20,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <div class="form-group"><!--Room No.-->
-                                            <asp:Label ID="Label1" for="DropRoomNo" runat="server" Text="Room No."></asp:Label>
+                                            <asp:Label ID="Label1" runat="server" Text="Room No."></asp:Label>
                                             <asp:DropDownList ID="DropRoomNo" runat="server" CssClass="form-control">
                                                 <asp:ListItem>choose one</asp:ListItem>
                                                 <asp:ListItem>1</asp:ListItem>
@@ -37,23 +37,23 @@
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6"><!--Full Name-->
-                                        <asp:Label for="FullName" ID="FullNameLabe" Text="Full Name" runat="server"></asp:Label>
+                                        <asp:Label ID="FullNameLabe" Text="Full Name" runat="server"></asp:Label>
                                         <asp:TextBox ID="FullName" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Contact Number-->
-                                        <asp:Label for="ContactNoID" ID="ContactNoLabel" Text="Mobile/Phone No." runat="server"></asp:Label>
+                                        <asp:Label ID="ContactNoLabel" Text="Mobile/Phone No." runat="server"></asp:Label>
                                         <asp:TextBox ID="ContactNoid" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-12"><!--Address-->
-                                        <asp:Label for="AddressID" ID="AddressLabel" Text="Address" runat="server"></asp:Label>
+                                        <asp:Label ID="AddressLabel" Text="Address" runat="server"></asp:Label>
                                         <asp:TextBox ID="AddressID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Nationality-->
-                                        <asp:Label for="NationalityID" ID="NationalityLabel" Text="Nationality" runat="server"></asp:Label>
+                                        <asp:Label ID="NationalityLabel" Text="Nationality" runat="server"></asp:Label>
                                         <asp:TextBox ID="NationalityID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Occupation-->
-                                        <asp:Label for="OccupationID" ID="OccupationLabel" Text="Servie or Bussiness" runat="server"></asp:Label>
+                                        <asp:Label ID="OccupationLabel" Text="Servie or Bussiness" runat="server"></asp:Label>
                                         <asp:TextBox ID="OccupationID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <div class="form-group"><!--No of Persons-->
-                                            <asp:Label ID="DropNoOfPersonLabel" for="DropNoOfPersonID" runat="server" Text="No Of Person"></asp:Label>
+                                            <asp:Label ID="DropNoOfPersonLabel" runat="server" Text="No Of Person"></asp:Label>
                                             <asp:DropDownList ID="DropNoOfPersonID" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="DropNoOfPersonID_Changed">
                                                 <asp:ListItem Text="1" Value="One"></asp:ListItem>
                                                 <asp:ListItem Text="2" Value="Two"></asp:ListItem>
@@ -81,11 +81,11 @@
                                     <div class="form-group col-md-6">
                                         <div class="form-row">
                                             <div class="form-group col-md-8"><!--Person No 1-->
-                                                <asp:Label for="PersonOne" ID="personLabel1" Text="Person 1" runat="server"></asp:Label>
+                                                <asp:Label ID="personLabel1" Text="Person 1" runat="server"></asp:Label>
                                                 <asp:TextBox ID="PersonOne" runat="server" CssClass="form-control" Placeholder="Person 1"></asp:TextBox>
                                             </div>
                                             <div class="form-group col-md-4"><!--Age No 1-->
-                                                <asp:Label for="AgeOne" ID="AgeLabel1" Text="age" runat="server"></asp:Label>
+                                                <asp:Label ID="AgeLabel1" Text="age" runat="server"></asp:Label>
                                                 <asp:TextBox ID="AgeOne" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
                                             </div>
                                         </div>
@@ -179,47 +179,42 @@
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6"><!--Arriver from-->
-                                        <asp:Label for="ArriverFromID" ID="ArriverFromLabel" Text="Arriver From" runat="server"></asp:Label>
+                                        <asp:Label ID="ArriverFromLabel" Text="Arriver From" runat="server"></asp:Label>
                                         <asp:TextBox ID="ArriverFromID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Perpose of Visit-->
-                                        <asp:Label for="PerposeOfVisitID" ID="PerposeOfVisitLabe" Text="Perpose Of Visit" runat="server"></asp:Label>
+                                        <asp:Label ID="PerposeOfVisitLabe" Text="Perpose Of Visit" runat="server"></asp:Label>
                                         <asp:TextBox ID="TexPerposeOfVisitIDtBox1" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Date of Arrival-->
-                                        <asp:Label for="DateOfArivalID" ID="DateOfArivalLabel" Text="Date of Arival" runat="server"></asp:Label>
+                                        <asp:Label ID="DateOfArivalLabel" Text="Date of Arival" runat="server"></asp:Label>
                                         <asp:TextBox ID="DateOfArivalID" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Date of Departure-->
-                                        <asp:Label for="DateOFDpartureID" ID="DateOFDpartureLabel" Text="Date of Dparture" runat="server"></asp:Label>
+                                        <asp:Label ID="DateOFDpartureLabel" Text="Date of Dparture" runat="server"></asp:Label>
                                         <asp:TextBox ID="DateOFDpartureID" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-12"><!--Address To Proceding-->
-                                        <asp:Label for="AddressToProcedingID" ID="AddressToProcedingLabel" Text="Address To Proceding" runat="server"></asp:Label>
+                                        <asp:Label ID="AddressToProcedingLabel" Text="Address To Proceding" runat="server"></asp:Label>
                                         <asp:TextBox ID="AddressToProcedingID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Duration Of Day-->
-                                        <asp:Label for="DurationOfDayID" ID="DurationOfDayLabel" Text="Duration Of Day" runat="server"></asp:Label>
+                                        <asp:Label ID="DurationOfDayLabel" Text="Duration Of Day" runat="server"></asp:Label>
                                         <asp:TextBox ID="DurationOfDayID" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Vehica No-->
-                                        <asp:Label for="VehicalNoID" ID="VehicalNoLabel" Text="Vehical No." runat="server"></asp:Label>
+                                        <asp:Label ID="VehicalNoLabel" Text="Vehical No." runat="server"></asp:Label>
                                         <asp:TextBox ID="VehicalNoID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Poto Id-->
-                                        <asp:Label for="IdProofID" ID="IdProofLabel" Text="Id Proof(upload PhotoId)" runat="server"></asp:Label>
+                                        <asp:Label ID="IdProofLabel" Text="Id Proof(upload PhotoId)" runat="server"></asp:Label>
                                         <asp:FileUpload ID="FileUTexIdProofID" CssClass="form-control-file" runat="server" />
                                     </div>
                                 </div>
                             </div>
+                                <!--Preview Button-->
                             <div class="card-footer text-right">
                                 <asp:Button ID="PREVIEWButton" runat="server" Text="Preview" CssClass="btn btn-outline-primary" OnClick="PREVIEWButton_Click" />
-                                <!--Preview Button-->
-                                    <!--<a href="#Preview">
-                                        <div class="btn btn-outline-primary" id="PreviewButton" onclick="openPopUp()">
-                                            Preview
-                                        </div>
-                                    </a>-->
                             </div>
                         </div>
                     </div>
@@ -232,7 +227,7 @@
         -------------------------------------->
 
 
-        <div runat="server" CssClass="modal-container" id="modalContainer" visible="false">
+        <div runat="server" class="modal-container" id="modalContainer" visible="false">
             <br />
             <div class="container"><div class="container">
                 <div class="card text">
@@ -354,6 +349,7 @@
                 </div>
             </div>
         </div>
+        <br />
     </section>
     
 </asp:Content>

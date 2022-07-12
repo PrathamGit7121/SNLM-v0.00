@@ -3,7 +3,7 @@
     <section class="cnt-section">
         <div class="home-content">
             <div class="overview-boxes">
-                <div class="box" style="width:auto;">
+                <div class="box" runat="server" id="gestBill" style="width:auto;">
                     <div class="right-side">
 
         <!-------------------------------------
@@ -24,7 +24,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <div class="form-group"><!--Room No-->
-                                            <asp:Label ID="BillRoomNoLabel" for="BillDropRoomNo" runat="server" Text="Room No."></asp:Label>
+                                            <asp:Label ID="BillRoomNoLabel" runat="server" Text="Room No."></asp:Label>
                                             <asp:DropDownList ID="BillDropRoomNo" runat="server" CssClass="form-control">
                                                 <asp:ListItem>choose Room</asp:ListItem>
                                                 <asp:ListItem>1</asp:ListItem>
@@ -44,15 +44,15 @@
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6"><!--Full Name-->
-                                        <asp:Label for="BillFullName" ID="FullNameLabe" Text="Full Name" runat="server"></asp:Label>
+                                        <asp:Label ID="FullNameLabe" Text="Full Name" runat="server"></asp:Label>
                                         <asp:TextBox ID="BillFullName" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Offline Bill-->
-                                        <asp:Label for="BillOfflineID" ID="BillOfflineLabel" Text="Offline Amount" runat="server"></asp:Label>
+                                        <asp:Label ID="BillOfflineLabel" Text="Offline Amount" runat="server"></asp:Label>
                                         <asp:TextBox ID="BillOfflineID" runat="server" CssClass="form-control" placeholder="Rs." OnTextChanged="BillOfflineID_TextChanged"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Online Bill-->
-                                        <asp:Label for="BillOnlineID" ID="BillOnlineLabel" Text="Online Amount" runat="server"></asp:Label>
+                                        <asp:Label ID="BillOnlineLabel" Text="Online Amount" runat="server"></asp:Label>
                                         <asp:TextBox ID="BillOnlineID" runat="server" CssClass="form-control" placeholder="Rs." OnTextChanged="BillOnlineID_TextChanged"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Bank Name-->
@@ -71,11 +71,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--Preview Button-->
                             <div class="card-footer text-right">
-                                    <a href="#Preview"><!--Preview Button-->
-                                        <div class="btn btn-outline-primary" id="PreviewButton" onclick="openPopUp()">
-                                            Preview
-                                        </div>
+                                    <a href="#Preview">
+                                        <asp:Button ID="PREVIEWButton" runat="server" Text="Preview" CssClass="btn btn-outline-primary" OnClick="PREVIEWButton_Click" />
                                     </a>
                             </div>
                         </div>
@@ -88,7 +87,7 @@
             Preview Tab
         -------------------------------------->
 
-            <div class="modal-container" id="modal_container">
+            <div runat="server" class="modal-container" id="BillContainer" visible="false">
                 <div class="container">
                     <div class="container">
                         <div class="card text">
@@ -135,16 +134,18 @@
             Preview Buttons
         -------------------------------------->
 
-                            <div class="card-footer text-right"><!--Preview Save button-->
+                            <div class="card-footer text-right">
+                                <!--Preview Save button-->
                                 <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" />
-                                <a href="#body"><!--Preview Cancel Button-->
-                                    <div class="btn btn-outline-primary" onclick="closePopUp()">Cancel</div>
+                                <a href="#body">
+                                    <!--Preview Cancel Button-->
+                                    <asp:Button ID="CancelPreview" runat="server" Text="CANCEL" CssClass="btn btn-outline-primary" OnClick="CancelPreview_Click" />
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><br />
             <div class="sales-boxes">
                 <div class="recent-sales box">
                     <div class="title">Recent Sales</div>
