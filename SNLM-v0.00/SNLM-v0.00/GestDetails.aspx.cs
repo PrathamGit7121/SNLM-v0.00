@@ -122,6 +122,16 @@ namespace SNLM_v0._00
             }
         }
 
+        protected void previewbtn_Click(object sender, EventArgs e)
+        {
+            Panel1.Visible = true;
+        }
+
+        protected void cancel_btn_Click(object sender, EventArgs e)
+        {
+            Panel1.Visible = false;
+        }
+
         /*protected void DropNoOfPersonID_Changed(object sender, EventArgs e)
         {
             if (DropNoOfPersonID.SelectedItem.Value == "One")
