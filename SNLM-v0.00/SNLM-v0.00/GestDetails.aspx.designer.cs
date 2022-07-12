@@ -13,6 +13,15 @@ namespace SNLM_v0._00 {
     public partial class GestDetails {
         
         /// <summary>
+        /// gestDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gestDetails;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -535,6 +544,24 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.FileUpload FileUTexIdProofID;
         
         /// <summary>
+        /// PREVIEWButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button PREVIEWButton;
+        
+        /// <summary>
+        /// modalContainer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl modalContainer;
+        
+        /// <summary>
         /// PrRoomNoLabel control.
         /// </summary>
         /// <remarks>
@@ -551,6 +578,24 @@ namespace SNLM_v0._00 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label PrRoomNo;
+        
+        /// <summary>
+        /// PrFullNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PrFullNameLabel;
+        
+        /// <summary>
+        /// PrFullName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PrFullName;
         
         /// <summary>
         /// PrContactLabel control.
@@ -832,6 +877,15 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.Label PrIdProofLabel;
         
         /// <summary>
+        /// ImgIDproof control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgIDproof;
+        
+        /// <summary>
         /// PrIdProof control.
         /// </summary>
         /// <remarks>
@@ -848,5 +902,14 @@ namespace SNLM_v0._00 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SAVEButton;
+        
+        /// <summary>
+        /// CloseButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CloseButton;
     }
 }

@@ -18,6 +18,7 @@ namespace SNLM_v0._00
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["SNLMConnectionString"].ConnectionString);
 
         }
+
         protected void LoginID_Click(object sender, EventArgs e)
         {
 

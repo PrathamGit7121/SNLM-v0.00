@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="GestDetails.aspx.cs" Inherits="SNLM_v0._00.GestDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="cnt-section">
-        <div class="home-content">
+        <div  runat="server" id="gestDetails" class="home-content">
             <div class="overview-boxes">
                 <div class="box" style="width: auto;">
                     <div class="right-side">
@@ -212,12 +212,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer text-right"><!--Preview Button-->
-                                    <a href="#Preview">
+                            <div class="card-footer text-right">
+                                <asp:Button ID="PREVIEWButton" runat="server" Text="Preview" CssClass="btn btn-outline-primary" OnClick="PREVIEWButton_Click" />
+                                <!--Preview Button-->
+                                    <!--<a href="#Preview">
                                         <div class="btn btn-outline-primary" id="PreviewButton" onclick="openPopUp()">
                                             Preview
                                         </div>
-                                    </a>
+                                    </a>-->
                             </div>
                         </div>
                     </div>
@@ -230,13 +232,13 @@
         -------------------------------------->
 
 
-        <div class="modal-container" id="modal_container">
+        <div runat="server" CssClass="modal-container" id="modalContainer" visible="false">
+            <br />
             <div class="container"><div class="container">
                 <div class="card text">
                     <div class="card-header">
                         <h4>Preview</h4>
                     </div>
-
         <!-------------------------------------
             Preview content
         -------------------------------------->
@@ -244,8 +246,14 @@
                     <div class="card-body">
                         <div class="form-row">
                             <div class="form-group col-md-6"><!--Preview Room No.-->
-                                <asp:Label ID="PrRoomNoLabel" Text="Full Name :" runat="server"></asp:Label>
+                                <asp:Label ID="PrRoomNoLabel" Text="Room Number :" runat="server"></asp:Label>
                                 <asp:Label ID="PrRoomNo" Text="" runat="server"></asp:Label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6"><!--Preview Room No.-->
+                                <asp:Label ID="PrFullNameLabel" Text="Full Name :" runat="server"></asp:Label>
+                                <asp:Label ID="PrFullName" Text="" runat="server"></asp:Label>
                             </div>
                         </div>
                         <div class="form-row">
@@ -321,9 +329,11 @@
                             </div>
                             <div class="form-group col-md-6"><!--Prevew Photo Id-->
                                 <asp:Label ID="PrIdProofLabel" Text="Id Proof :" runat="server"></asp:Label>
+                                <asp:Image ID="ImgIDproof" runat="server" Height="100px" Width="180px"></asp:Image>
                                 
                                 <asp:Label ID="PrIdProof" Text="" runat="server"></asp:Label>
                                 <!-- Tuch add kar kay te mala nay mahit @SUMIT -->
+
                             </div>
                         </div>
                     </div>
@@ -333,9 +343,11 @@
         -------------------------------------->
 
                     <div class="card-footer text-right">
-                        <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
+                        <!--Save To Database Button-->
+                                <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
+                                
                         <a href="#PreviewButton">
-                            <div class="btn btn-outline-primary" onclick="closePopUp()">Cancel</div>
+                            <asp:Button ID="CloseButton" runat="server" CssClass="btn btn-outline-primary" Text="CLOSE" OnClick="CloseButton_Click" />
                         </a>
                     </div>
                 </div>
