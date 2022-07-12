@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="form-group col-md-6"><!--Contact Number-->
                                         <asp:Label for="ContactNoID" ID="ContactNoLabel" Text="Mobile/Phone No." runat="server"></asp:Label>
-                                        <asp:TextBox ID="ContactNoid" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <asp:TextBox ID="ContactNoid" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-12"><!--Address-->
                                         <asp:Label for="AddressID" ID="AddressLabel" Text="Address" runat="server"></asp:Label>
@@ -98,7 +98,7 @@
                                                     <asp:TextBox ID="PersonTwo" runat="server" CssClass="form-control" Placeholder="Person 2"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 2-->
-                                                    <asp:TextBox ID="AgeTwo" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeTwo" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -108,7 +108,7 @@
                                                     <asp:TextBox ID="PersonThree" runat="server" CssClass="form-control" Placeholder="Person 3"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 3-->
-                                                    <asp:TextBox ID="AgeThree" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeThree" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -118,7 +118,7 @@
                                                     <asp:TextBox ID="PersonFour" runat="server" CssClass="form-control" Placeholder="Person 4"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 4-->
-                                                    <asp:TextBox ID="AgeFour" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeFour" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -128,7 +128,7 @@
                                                     <asp:TextBox ID="PersonFive" runat="server" CssClass="form-control" Placeholder="Person 5"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 5-->
-                                                    <asp:TextBox ID="AgeFive" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeFive" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -138,7 +138,7 @@
                                                     <asp:TextBox ID="PersonSix" runat="server" CssClass="form-control" Placeholder="Person 6"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 6-->
-                                                    <asp:TextBox ID="AgeSix" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeSix" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -148,7 +148,7 @@
                                                     <asp:TextBox ID="PersonSeven" runat="server" CssClass="form-control" Placeholder="Person 7"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 7-->
-                                                    <asp:TextBox ID="AgeSeven" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeSeven" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -158,7 +158,7 @@
                                                     <asp:TextBox ID="PersonEight" runat="server" CssClass="form-control" Placeholder="Person 8"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 8-->
-                                                    <asp:TextBox ID="AgeEight" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeEight" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -168,7 +168,7 @@
                                                     <asp:TextBox ID="PersonNine" runat="server" CssClass="form-control" Placeholder="Person 9"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group col-md-4"><!--Age 9-->
-                                                    <asp:TextBox ID="AgeNine" runat="server" CssClass="form-control" Placeholder="Age"></asp:TextBox>
+                                                    <asp:TextBox ID="AgeNine" runat="server" CssClass="form-control" Placeholder="Age" TextMode="Number"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </asp:Label>
@@ -188,11 +188,11 @@
                                     </div>
                                     <div class="form-group col-md-6"><!--Date of Arrival-->
                                         <asp:Label for="DateOfArivalID" ID="DateOfArivalLabel" Text="Date of Arival" runat="server"></asp:Label>
-                                        <asp:TextBox ID="DateOfArivalID" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <asp:TextBox ID="DateOfArivalID" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Date of Departure-->
                                         <asp:Label for="DateOFDpartureID" ID="DateOFDpartureLabel" Text="Date of Dparture" runat="server"></asp:Label>
-                                        <asp:TextBox ID="DateOFDpartureID" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <asp:TextBox ID="DateOFDpartureID" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-12"><!--Address To Proceding-->
                                         <asp:Label for="AddressToProcedingID" ID="AddressToProcedingLabel" Text="Address To Proceding" runat="server"></asp:Label>
@@ -200,14 +200,14 @@
                                     </div>
                                     <div class="form-group col-md-6"><!--Duration Of Day-->
                                         <asp:Label for="DurationOfDayID" ID="DurationOfDayLabel" Text="Duration Of Day" runat="server"></asp:Label>
-                                        <asp:TextBox ID="DurationOfDayID" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <asp:TextBox ID="DurationOfDayID" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Vehica No-->
                                         <asp:Label for="VehicalNoID" ID="VehicalNoLabel" Text="Vehical No." runat="server"></asp:Label>
                                         <asp:TextBox ID="VehicalNoID" runat="server" CssClass="form-control"></asp:TextBox>
                                     </div>
                                     <div class="form-group col-md-6"><!--Poto Id-->
-                                        <asp:Label for="IdProofID" ID="IdProofLabel" Text="Id Proof(upload Adhar)" runat="server"></asp:Label>
+                                        <asp:Label for="IdProofID" ID="IdProofLabel" Text="Id Proof(upload PhotoId)" runat="server"></asp:Label>
                                         <asp:FileUpload ID="FileUTexIdProofID" CssClass="form-control-file" runat="server" />
                                     </div>
                                 </div>
@@ -329,7 +329,12 @@
                             </div>
                             <div class="form-group col-md-6"><!--Prevew Photo Id-->
                                 <asp:Label ID="PrIdProofLabel" Text="Id Proof :" runat="server"></asp:Label>
+<<<<<<< HEAD
                                 <asp:Image ID="ImgIDproof" runat="server" Height="100px" Width="180px"></asp:Image>
+=======
+                                
+                                <asp:Label ID="PrIdProof" Text="" runat="server"></asp:Label>
+>>>>>>> 5add72d85048106c37a60f13ead4028c2490efdb
                                 <!-- Tuch add kar kay te mala nay mahit @SUMIT -->
 
                             </div>

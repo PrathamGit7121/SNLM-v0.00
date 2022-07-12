@@ -12,7 +12,7 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <h5>GEST Bill</h5>
+                                <h5>GEST BILL</h5>
                             </div>
                             <div class="card-body">
 
