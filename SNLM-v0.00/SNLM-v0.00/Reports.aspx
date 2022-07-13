@@ -27,11 +27,9 @@
                                             <asp:Label ID="BillRoomNoLabel" for="BillDropRoomNo" runat="server" Text="Room No."></asp:Label>
                                             <asp:DropDownList ID="BillDropRoomNo" runat="server" CssClass="form-control">
                                                 <asp:ListItem>choose Room</asp:ListItem>
-                                                <asp:ListItem>1</asp:ListItem>
-                                                <asp:ListItem>2</asp:ListItem>
-                                                <asp:ListItem>3</asp:ListItem>
-                                                <asp:ListItem>4</asp:ListItem>
-                                                <asp:ListItem>5</asp:ListItem>
+                                                <asp:ListItem>Total Report</asp:ListItem>
+                                                <asp:ListItem>Online/offline report</asp:ListItem>
+                                                <asp:ListItem>remaining report</asp:ListItem>
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -82,6 +80,7 @@
                     </div>
             </div>
 
+        </div>
         </div>
     </section>
 

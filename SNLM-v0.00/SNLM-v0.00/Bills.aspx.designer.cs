@@ -112,24 +112,6 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.DropDownList BillBankName;
         
         /// <summary>
-        /// BillTotalLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillTotalLabel;
-        
-        /// <summary>
-        /// BillTotalID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillTotalID;
-        
-        /// <summary>
         /// PREVIEWButton control.
         /// </summary>
         /// <remarks>

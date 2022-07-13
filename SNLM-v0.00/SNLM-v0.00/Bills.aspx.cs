@@ -20,7 +20,7 @@ namespace SNLM_v0._00
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["SNLMConnectionString"].ConnectionString);
         }
 
-        protected void AddValue()
+        public void AddValue()
         {
             int AmtOnline, AmtOffline, AmtTotal;
             if (BillOfflineID.Text != "")
@@ -33,7 +33,7 @@ namespace SNLM_v0._00
                 AmtOffline = 0;
 
             AmtTotal = AmtOnline + AmtOffline;
-            BillTotalID.Text = AmtTotal.ToString();
+            PrTotal.Text = AmtTotal.ToString();
         }
 
         protected void BillOfflineID_TextChanged(object sender, EventArgs e)
@@ -45,14 +45,15 @@ namespace SNLM_v0._00
         {
             AddValue();
         }
-        public void SetPreview(string idProof)
+        public void SetPreview()
         {
             PreRoomNo.Text = BillDropRoomNo.SelectedItem.Text;
             PreFullName.Text = BillFullName.Text;
             PreOffline.Text = BillOfflineID.Text;
             PreOnline.Text = BillOnlineID.Text;
             PrBankName.Text = BillBankName.SelectedItem.Text;
-            PrTotal.Text = BillTotalID.Text;
+
+            AddValue();
         }
         protected void PREVIEWButton_Click(object sender, EventArgs e)
         {

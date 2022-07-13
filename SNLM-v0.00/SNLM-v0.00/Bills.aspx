@@ -63,12 +63,6 @@
                                             <asp:ListItem>Bank of Maharastra</asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
-                                    <div class="form-group col-md-6"><!--Total Bill-->
-                                        <asp:Label ID="BillTotalLabel" Text="TOtal Amount :" runat="server"></asp:Label>
-                                        <h3>
-                                            <asp:Label ID="BillTotalID" runat="server" Text=""></asp:Label>
-                                        </h3>
-                                    </div>
                                 </div>
                             </div>
                             <!--Preview Button-->
@@ -102,29 +96,29 @@
                             <div class="card-body">
                                 <div class="form-row">
                                     <div class="form-group col-md-6"><!--Preview Room No.-->
-                                        <asp:Label ID="preRoomNoLabel" Text="Room No :" runat="server"></asp:Label>
+                                        <b><asp:Label ID="preRoomNoLabel" Text="Room No :" runat="server"></asp:Label></b>
                                         <asp:Label ID="PreRoomNo" Text="" runat="server"></asp:Label>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6"><!--Preview Full Name-->
-                                        <asp:Label ID="PreFullNameLabel" Text="Gest Name :" runat="server"></asp:Label>
+                                        <b><asp:Label ID="PreFullNameLabel" Text="Gest Name :" runat="server"></asp:Label></b>
                                         <asp:Label ID="PreFullName" Text="" runat="server"></asp:Label>
                                     </div>
                                     <div class="form-group col-md-6"><!--Preview Offline payment-->
-                                        <asp:Label ID="PreOfflineLabel" Text="Offline Payment :" runat="server"></asp:Label>
+                                        <b><asp:Label ID="PreOfflineLabel" Text="Offline Payment :" runat="server"></asp:Label></b>
                                         <asp:Label ID="PreOffline" Text="" runat="server"></asp:Label>
                                     </div>
                                     <div class="form-group col-md-6"><!--Preview Online Payment-->
-                                        <asp:Label ID="PreOnlineLabel" Text="Online Payment :" runat="server"></asp:Label>
+                                        <b><asp:Label ID="PreOnlineLabel" Text="Online Payment :" runat="server"></asp:Label></b>
                                         <asp:Label ID="PreOnline" Text="" runat="server"></asp:Label>
                                     </div>
                                     <div class="form-group col-md-6"><!--Preview Bank Name-->
-                                        <asp:Label ID="PrBankNameLabel" Text="Total Amount :" runat="server"></asp:Label>
+                                        <b><asp:Label ID="PrBankNameLabel" Text="Total Amount :" runat="server"></asp:Label></b>
                                         <asp:Label ID="PrBankName" Text="" runat="server"></asp:Label>
                                     </div>
                                     <div class="form-group col-md-6"><!--Preview Total Amount-->
-                                        <asp:Label ID="PrTotalLabel" Text="Total Amount :" runat="server"></asp:Label>
+                                        <b><asp:Label ID="PrTotalLabel" Text="Total Amount :" runat="server"></asp:Label></b>
                                         <asp:Label ID="PrTotal" Text="" runat="server"></asp:Label>
                                     </div>
                                 </div>
