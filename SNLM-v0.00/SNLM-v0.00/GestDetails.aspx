@@ -8,12 +8,11 @@
 
                         <!--  form start here  -->
 
-                        <div class="card">
-                            <div class="card-header">
+                        <div class="card border-primary">
+                            <div class="card-header border-primary">
                                 <h5>GEST DETAILS</h5>
                             </div>
                             <div class="card-body">
-
 
                                 <!-- Row One (room No) -->
 
@@ -213,7 +212,7 @@
                                 </div>
                             </div>
                                 <!--Preview Button-->
-                            <div class="card-footer text-right">
+                            <div class="card-footer border-primary text-right">
                                 <asp:Button ID="PREVIEWButton" runat="server" Text="Preview" CssClass="btn btn-outline-primary" OnClick="PREVIEWButton_Click" />
                             </div>
                         </div>
@@ -230,15 +229,15 @@
         <div runat="server" class="modal-container" id="modalContainer" visible="false">
             <br />
             <div class="container"><div class="container">
-                <div class="card text">
-                    <div class="card-header">
+                <div class="card border-primary text">
+                    <div class="card-header border-primary">
                         <h4>Preview</h4>
                     </div>
         <!-------------------------------------
             Preview content
         -------------------------------------->
 
-                    <div class="card-body">
+                    <div class="card-body border-primary">
                         <div class="form-row">
                             <div class="form-group col-md-6"><!--Preview Room No.-->
                                 <b><asp:Label ID="PrRoomNoLabel" Text="Room Number :" runat="server"></asp:Label></b>
@@ -341,7 +340,7 @@
             Preview Buttons
         -------------------------------------->
 
-                    <div class="card-footer text-right">
+                    <div class="card-footer border-primary text-right">
                         <!--Save To Database Button-->
                                 <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
                                 

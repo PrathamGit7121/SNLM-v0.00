@@ -62,7 +62,7 @@
 
             <div class="sales-boxes">
                 <div class="recent-sales box">
-                    <div class="title">Recent Sales</div>
+                    <div class="title">Recent Gest</div>
                     <div class="sales-details">
                         <ul class="details">
                             <li class="topic">Date</li>
@@ -77,7 +77,7 @@
                             <li><a href="#">02 Jan 2021</a></li>
                         </ul>
                         <ul class="details">
-                            <li class="topic">Customer</li>
+                            <li class="topic">Gest</li>
                             <li><a href="#">Alex Doe</a></li>
                             <li><a href="#">David Mart</a></li>
                             <li><a href="#">Roe Parter</a></li>
@@ -89,7 +89,7 @@
                             <li><a href="#">Tiana Loths</a></li>
                         </ul>
                         <ul class="details">
-                            <li class="topic">Sales</li>
+                            <li class="topic">Arrived From</li>
                             <li><a href="#">Delivered</a></li>
                             <li><a href="#">Pending</a></li>
                             <li><a href="#">Returned</a></li>
@@ -101,23 +101,20 @@
                             <li><a href="#">Delivered</a></li>
                         </ul>
                         <ul class="details">
-                            <li class="topic">Total</li>
-                            <li><a href="#">$204.98</a></li>
-                            <li><a href="#">$24.55</a></li>
-                            <li><a href="#">$25.88</a></li>
-                            <li><a href="#">$170.66</a></li>
-                            <li><a href="#">$56.56</a></li>
-                            <li><a href="#">$44.95</a></li>
-                            <li><a href="#">$67.33</a></li>
-                            <li><a href="#">$23.53</a></li>
-                            <li><a href="#">$46.52</a></li>
+                            <li class="topic">Bill</li>
+                            <li><a href="#">204.98</a></li>
+                            <li><a href="#">24.55</a></li>
+                            <li><a href="#">25.88</a></li>
+                            <li><a href="#">170.66</a></li>
+                            <li><a href="#">56.56</a></li>
+                            <li><a href="#">44.95</a></li>
+                            <li><a href="#">67.33</a></li>
+                            <li><a href="#">23.53</a></li>
+                            <li><a href="#">46.52</a></li>
                         </ul>
                     </div>
-                    <div class="button">
-                        <a href="#">See All</a>
-                    </div>
                 </div>
-                <div class="top-sales box">
+                <div class="top-sales box" style="height: 300px;">
                     <div class="title">Current Gests</div>
                     <ul class="top-sales-details">
                         <li>
@@ -158,7 +155,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div><br />
         </div>
     </section>
 </asp:Content>

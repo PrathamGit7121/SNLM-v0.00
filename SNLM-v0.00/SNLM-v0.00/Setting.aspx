@@ -5,8 +5,8 @@
             <div class="sales-boxes">
                 
                 <div class="recent-sales box" style="width: 425px;">
-                    <div class="card">
-                        <div class="card-header">
+                    <div class="card  border-primary">
+                        <div class="card-header  border-primary">
                             <h3>USER INFO</h3>
                         </div>
                         <div class="card-body">
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer text-center">
+                        <div class="card-footer border-primary text-center">
                             <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-primary" />
                             <asp:Button ID="DELETButton" runat="server" Text="DELETE" CssClass="btn btn-primary" />
                             <asp:Button ID="UPDATEButton" runat="server" Text="UPDATE" CssClass="btn btn-primary" />
@@ -51,12 +51,12 @@
                 
                 <div class="recent-sales box">
                     <div class="sales-details">
-                    <div class="card">
+                    <div class="card border-primary">
                         <div class="card-header">
                             <h3>USER DETAILS </h3>
                         </div>
-                        <div class="card-body">
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="Grid" DataSourceID="SqlDataSource1">
+                        <div class="card-body border-primary">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="Grid"  DataSourceID="SqlDataSource1" style="width:550px;">
                                 <Columns >
                                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="name" />
                                     <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="username" />

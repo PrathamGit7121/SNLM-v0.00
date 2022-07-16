@@ -13,6 +13,42 @@ namespace SNLM_v0._00 {
     public partial class Reports {
         
         /// <summary>
+        /// RepFromDateLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RepFromDateLabel;
+        
+        /// <summary>
+        /// RepFromDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox RepFromDate;
+        
+        /// <summary>
+        /// RepToDateLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RepToDateLabel;
+        
+        /// <summary>
+        /// RepToDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox RepToDate;
+        
+        /// <summary>
         /// BillRoomNoLabel control.
         /// </summary>
         /// <remarks>
@@ -31,93 +67,39 @@ namespace SNLM_v0._00 {
         protected global::System.Web.UI.WebControls.DropDownList BillDropRoomNo;
         
         /// <summary>
-        /// FullNameLabe control.
+        /// RepExport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FullNameLabe;
+        protected global::System.Web.UI.WebControls.Button RepExport;
         
         /// <summary>
-        /// BillFullName control.
+        /// RepSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BillFullName;
+        protected global::System.Web.UI.WebControls.Button RepSearch;
         
         /// <summary>
-        /// BillOfflineLabel control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillOfflineLabel;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// BillOfflineID control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BillOfflineID;
-        
-        /// <summary>
-        /// BillOnlineLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillOnlineLabel;
-        
-        /// <summary>
-        /// BillOnlineID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BillOnlineID;
-        
-        /// <summary>
-        /// BillBankNameLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillBankNameLabel;
-        
-        /// <summary>
-        /// BillBankName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList BillBankName;
-        
-        /// <summary>
-        /// BillTotalLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillTotalLabel;
-        
-        /// <summary>
-        /// BillTotalID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BillTotalID;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

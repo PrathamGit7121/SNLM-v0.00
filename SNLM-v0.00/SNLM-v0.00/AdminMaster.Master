@@ -12,16 +12,18 @@
           .Grid {
                 border-color: gray;
                 height: auto;
-                width: 550px;
+                width: auto;
                 font-size: 18px;
           }
           .Grid th {
               text-align: center;
+              padding: 10px;
               background-color: var(--primary);
               color: #fff;
               font-family: 'Poppins', sans-serif;
           }
           .Grid td{
+              padding: 5px;
               text-align: center;
               background-color: #fff;
               height: 20px;

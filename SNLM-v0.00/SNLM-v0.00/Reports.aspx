@@ -3,30 +3,47 @@
     <section class="cnt-section">
         <div class="home-content">
             <div class="overview-boxes">
-                <div class="box" style="width:auto;">
+                <div class="box" style="width: auto;">
                     <div class="right-side">
 
-        <!-------------------------------------
+                        <!-------------------------------------
               form start here 
         -------------------------------------->
+                        
+                        <div class="container">
+                            <div class="card border-primary">
+                                <div class="card-header border-primary">
+                                    <h5>REPORTS</h5>
+                                </div>
+                                <div class="card-body">
 
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>REPORTS</h5>
-                            </div>
-                            <div class="card-body">
-
-                                
-        <!-------------------------------------
-            Row One (room No)
+                                    <!-------------------------------------
+            Select date (From date 2 to date)
         -------------------------------------->
 
-                                <div class="form-row">
-                                    <div class="form-group col-md-3">
-                                        <div class="form-group"><!--Room No-->
-                                            <asp:Label ID="BillRoomNoLabel" for="BillDropRoomNo" runat="server" Text="Room No."></asp:Label>
+                                    <div class="form-row md-12">
+                                        <div class="form-group col-md-6">
+                                            <!--From Date-->
+                                            <asp:Label ID="RepFromDateLabel" Text="From Date" runat="server"></asp:Label>
+                                            <asp:TextBox ID="RepFromDate" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <!--To Date-->
+                                            <asp:Label ID="RepToDateLabel" Text="To Date" runat="server"></asp:Label>
+                                            <asp:TextBox ID="RepToDate" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
+                                        </div>
+                                    </div>
+
+                                    <!-------------------------------------
+            Select dropdown (select Report Type)
+        -------------------------------------->
+
+                                    <div class="form-row md-12">
+                                        <div class="form-group">
+                                            <!--Select report type dropdown-->
+                                            <asp:Label ID="BillRoomNoLabel" for="BillDropRoomNo" runat="server" Text="Report Type"></asp:Label>
                                             <asp:DropDownList ID="BillDropRoomNo" runat="server" CssClass="form-control">
-                                                <asp:ListItem>choose Room</asp:ListItem>
+                                                <asp:ListItem>choose Report</asp:ListItem>
                                                 <asp:ListItem>Total Report</asp:ListItem>
                                                 <asp:ListItem>Online/offline report</asp:ListItem>
                                                 <asp:ListItem>remaining report</asp:ListItem>
@@ -35,53 +52,45 @@
                                     </div>
                                 </div>
 
-
-        <!-------------------------------------
-             Row Two (Name, contact, address, nationality, occupation)
+                                <!-------------------------------------
+            Report Buttons (Search & Export to Excel)
         -------------------------------------->
 
-                                <div class="form-row">
-                                    <div class="form-group col-md-6"><!--Full Name-->
-                                        <asp:Label for="BillFullName" ID="FullNameLabe" Text="Full Name" runat="server"></asp:Label>
-                                        <asp:TextBox ID="BillFullName" runat="server" CssClass="form-control"></asp:TextBox>
-                                    </div>
-                                    <div class="form-group col-md-6"><!--Offline Bill-->
-                                        <asp:Label for="BillOfflineID" ID="BillOfflineLabel" Text="Offline Amount" runat="server"></asp:Label>
-                                        <asp:TextBox ID="BillOfflineID" runat="server" CssClass="form-control" placeholder="Rs."></asp:TextBox>
-                                    </div>
-                                    <div class="form-group col-md-6"><!--Online Bill-->
-                                        <asp:Label for="BillOnlineID" ID="BillOnlineLabel" Text="Online Amount" runat="server"></asp:Label>
-                                        <asp:TextBox ID="BillOnlineID" runat="server" CssClass="form-control" placeholder="Rs."></asp:TextBox>
-                                    </div>
-                                    <div class="form-group col-md-6"><!--Bank Name-->
-                                        <asp:Label ID="BillBankNameLabel" runat="server" Text="Bank Name"></asp:Label>
-                                        <asp:DropDownList ID="BillBankName" runat="server" CssClass="form-control">
-                                            <asp:ListItem>choose Bank</asp:ListItem>
-                                            <asp:ListItem>Bank Of India</asp:ListItem>
-                                            <asp:ListItem>Bank of Maharastra</asp:ListItem>
-                                        </asp:DropDownList>
-                                    </div>
-                                    <div class="form-group col-md-6"><!--Total Bill-->
-                                        <asp:Label ID="BillTotalLabel" Text="TOtal Amount :" runat="server"></asp:Label>
-                                        <h3>
-                                            <asp:Label ID="BillTotalID" runat="server" Text=""></asp:Label>
-                                        </h3>
-                                    </div>
+                                <div class="card-footer border-primary text-right">
+                                    <asp:Button ID="RepExport" runat="server" Text="Export To Excel" CssClass="btn btn-outline-success" />
+                                    <asp:Button ID="RepSearch" runat="server" Text="SEARCH" CssClass="btn btn-outline-primary" />
                                 </div>
-                            </div>
-                            <div class="card-footer text-right">
-                                    <a href="#Preview"><!--Preview Button-->
-                                        <div class="btn btn-outline-primary" id="PreviewButton" onclick="openPopUp()">
-                                            Preview
-                                        </div>
-                                    </a>
                             </div>
                         </div>
                     </div>
-            </div>
+                </div>
 
+            </div>
+            <div class="sales-boxes" style="width: auto;">
+                <div class="recent-sales box">
+                    <div class="card border-primary">
+                        <div class="card-header">
+                            <h3>USER DETAILS </h3>
+                        </div>
+                        <div class="card-body border-primary">
+                            <asp:GridView ID="GridView1" CssClass="Grid" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                                <Columns>
+                                    <asp:BoundField DataField="RefId" HeaderText="Room No." SortExpression="RefId" />
+                                    <asp:BoundField DataField="CustName" HeaderText="Gest Name" SortExpression="CustName" />
+                                    <asp:BoundField DataField="OfflinePmt" HeaderText="Offline Payment" SortExpression="OfflinePmt" />
+                                    <asp:BoundField DataField="OnlinePmt" HeaderText="Online Payment" SortExpression="OnlinePmt" />
+                                    <asp:BoundField DataField="BankName" HeaderText="BaBank Name" SortExpression="BankName" />
+                                    <asp:BoundField DataField="BillAmount" HeaderText="Total Bill" SortExpression="BillAmount" />
+                                </Columns>
+                            </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SNLMConnectionString %>" SelectCommand="SELECT [RefId], [CustName], [OfflinePmt], [OnlinePmt], [BankName], [BillAmount] FROM [PaymentDetailss]"></asp:SqlDataSource>
+                        </div>
+                    </div>
+                </div>
+            </div><br />
         </div>
-        </div>
+
+
     </section>
 
 </asp:Content>

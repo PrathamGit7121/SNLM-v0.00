@@ -43,9 +43,64 @@ namespace SNLM_v0._00
                     insertcmd1.Parameters.AddWithValue("@VehicalNo", VehicalNoID.Text);
                     insertcmd1.Parameters.AddWithValue("@DateOfDeparture", DateOFDpartureID.Text);
                     insertcmd1.ExecuteNonQuery();
-                
 
+                    
+                        /*SqlCommand mem1cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem1cmd.Parameters.AddWithValue("@RefId", );
+                        mem1cmd.Parameters.AddWithValue("@Name", PersonOne.Text);
+                        mem1cmd.Parameters.AddWithValue("@Age", AgeOne.Text);
+                        mem1cmd.ExecuteNonQuery();
+                    
+                        SqlCommand mem2cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem2cmd.Parameters.AddWithValue("@RefId", );
+                        mem2cmd.Parameters.AddWithValue("@Name", PersonTwo.Text);
+                        mem2cmd.Parameters.AddWithValue("@Age", AgeTwo.Text);
+                        mem2cmd.ExecuteNonQuery();
+                    
+                        SqlCommand mem3cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem3cmd.Parameters.AddWithValue("@RefId", );
+                        mem3cmd.Parameters.AddWithValue("@Name", PersonThree.Text);
+                        mem3cmd.Parameters.AddWithValue("@Age", AgeThree.Text);
+                        mem3cmd.ExecuteNonQuery();
+                    
+                        SqlCommand mem4cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem4cmd.Parameters.AddWithValue("@RefId", );
+                        mem4cmd.Parameters.AddWithValue("@Name", PersonFour.Text);
+                        mem4cmd.Parameters.AddWithValue("@Age", AgeFour.Text);
+                        mem4cmd.ExecuteNonQuery();
+                    
+                        SqlCommand mem5cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem5cmd.Parameters.AddWithValue("@RefId", );
+                        mem5cmd.Parameters.AddWithValue("@Name", PersonFive.Text);
+                        mem5cmd.Parameters.AddWithValue("@Age", AgeFive.Text);
+                        mem5cmd.ExecuteNonQuery();
+                    
+                        SqlCommand mem6cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem6cmd.Parameters.AddWithValue("@RefId", );
+                        mem6cmd.Parameters.AddWithValue("@Name", PersonSix.Text);
+                        mem6cmd.Parameters.AddWithValue("@Age", AgeSix.Text);
+                        mem6cmd.ExecuteNonQuery();
+
+                        SqlCommand mem7cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem7cmd.Parameters.AddWithValue("@RefId", );
+                        mem7cmd.Parameters.AddWithValue("@Name", PersonSeven.Text);
+                        mem7cmd.Parameters.AddWithValue("@Age", AgeSeven.Text);
+                        mem6cmd.ExecuteNonQuery();
+
+                        SqlCommand mem8cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem8cmd.Parameters.AddWithValue("@RefId", );
+                        mem8cmd.Parameters.AddWithValue("@Name", PersonEight.Text);
+                        mem8cmd.Parameters.AddWithValue("@Age", AgeEight.Text);
+                        mem8cmd.ExecuteNonQuery();
+
+                        SqlCommand mem9cmd = new SqlCommand("insert into [MemberCustDetails] ([RefId],[Name],[Age]) values(@RefId,@Name,@Age)", con);
+                        mem9cmd.Parameters.AddWithValue("@RefId", );
+                        mem9cmd.Parameters.AddWithValue("@Name", PersonNine.Text);
+                        mem9cmd.Parameters.AddWithValue("@Age", AgeNine.Text);
+                        mem9cmd.ExecuteNonQuery();*/
+                    
                 if (con.State == ConnectionState.Open) con.Close();
+
             }
             catch(Exception ex)
             {
@@ -55,29 +110,9 @@ namespace SNLM_v0._00
 
         protected void DropNoOfPersonID_Changed(object sender, EventArgs e)
         {
-            if (DropNoOfPersonID.SelectedItem.Value == "One")
-            {
-                Person2.Visible = false;
-                Person3.Visible = false;
-                Person4.Visible = false;
-                Person5.Visible = false;
-                Person6.Visible = false;
-                Person7.Visible = false;
-                Person8.Visible = false;
-                Person9.Visible = false;
-            }
-            else
             if (DropNoOfPersonID.SelectedItem.Value == "Two")
             {
-              
                 Person2.Visible = true;
-                Person3.Visible = false;
-                Person4.Visible = false;
-                Person5.Visible = false;
-                Person6.Visible = false;
-                Person7.Visible = false;
-                Person8.Visible = false;
-                Person9.Visible = false;
             }
             else if (DropNoOfPersonID.SelectedItem.Value == "Three")
             {
