@@ -9,7 +9,7 @@
                             <div class="card-header bg-transparent border-primary"><h4>Guest / New Guest</h4></div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-8">
+                                    <div class="col-9">
                                         <div class="input-group mb-3">
                                             <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Search Guest.........."></asp:TextBox>
                                             <div class="input-group-append">
@@ -17,7 +17,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4 text-center">
+                                    <div class="col-3 text-center">
                                         <asp:Button ID="New_Guest" CssClass="btn btn-outline-success" runat="server" Text="New Guest" OnClick="New_Guest_Click" />
                                     </div>
                                 </div>

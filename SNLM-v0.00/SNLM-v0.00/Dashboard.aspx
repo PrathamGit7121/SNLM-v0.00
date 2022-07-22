@@ -59,6 +59,63 @@
                     </div>
                 </div>
             </div>
+            <div class="overview-boxes" runat="server" visible="false">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Room 06</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="Button1" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomOneLockButton_Click" />
+                        </div>
+                        <div class="indicator">
+                            <span class="text">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Room 07</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="Button2" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomTwoLockButton_Click" />
+                        </div>
+                        <div class="indicator">
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Room 08</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="Button3" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomThreeLockButton_Click"/>
+                        </div>
+                        <div class="indicator">
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Room 09</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="Button4" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomFourLockButton_Click" />
+                        </div>
+                        <div class="indicator">
+                            <span class="text">Down From Today</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Room 10</div>
+                        <div class="room-lockbtn">
+                            <asp:Button ID="Button5" CssClass="btn btn-outline-primary" runat="server" Text="Lock In" OnClick="RoomfiveLockButton_Click" BackColor="" />
+                        </div>
+                        <div class="indicator">
+                            <span class="text">Down From Today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="sales-boxes">
                 <div class="recent-sales box">
@@ -114,7 +171,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="top-sales box" style="height: 300px;">
+                <div class="top-sales box" style="height: auto;">
                     <div class="title">Current Guests</div>
                     <ul class="top-sales-details">
                         <li>
@@ -152,6 +209,38 @@
                                 <span class="product">Guest Name Room 5</span>
                             </a>
                             <span class="price">05</span>
+                        </li>
+                    </ul>
+                    <ul class="top-sales-details" runat="server" visible="false">
+                        <li>
+                            <a href="#">
+                                <span class="product">Guest Name Room 6</span>
+                            </a>
+                            <span class="price">06</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Guest Name Room 7</span>
+                            </a>
+                            <span class="price">07</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Guest Name Room 8</span>
+                            </a>
+                            <span class="price">08</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Guest Name Room 9</span>
+                            </a>
+                            <span class="price">09</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Guest Name Room 10</span>
+                            </a>
+                            <span class="price">10</span>
                         </li>
                     </ul>
                 </div>
