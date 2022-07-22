@@ -62,7 +62,7 @@
 
             <div class="sales-boxes">
                 <div class="recent-sales box">
-                    <div class="title">Recent Gest</div>
+                    <div class="title">Recent Guest</div>
                     <div class="sales-details">
                         <ul class="details">
                             <li class="topic">Date</li>
@@ -77,7 +77,7 @@
                             <li><a href="#">02 Jan 2021</a></li>
                         </ul>
                         <ul class="details">
-                            <li class="topic">Gest</li>
+                            <li class="topic">Guest</li>
                             <li><a href="#">Alex Doe</a></li>
                             <li><a href="#">David Mart</a></li>
                             <li><a href="#">Roe Parter</a></li>
@@ -115,41 +115,41 @@
                     </div>
                 </div>
                 <div class="top-sales box" style="height: 300px;">
-                    <div class="title">Current Gests</div>
+                    <div class="title">Current Guests</div>
                     <ul class="top-sales-details">
                         <li>
                             <a href="#">
-                                <span class="product"><b>Gest Names</b></span>
+                                <span class="product"><b>Guest Names</b></span>
                             </a>
                             <span class="price"><b>Rm. No.</b></span>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="product">Gest Name Room 1</span>
+                                <span class="product">Guest Name Room 1</span>
                             </a>
                             <span class="price">01</span>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="product">Gest Name Room 2</span>
+                                <span class="product">Guest Name Room 2</span>
                             </a>
                             <span class="price">02</span>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="product">Gest Name Room 3</span>
+                                <span class="product">Guest Name Room 3</span>
                             </a>
                             <span class="price">03</span>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="product">Gest Name Room 4</span>
+                                <span class="product">Guest Name Room 4</span>
                             </a>
                             <span class="price">04</span>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="product">Gest Name Room 5</span>
+                                <span class="product">Guest Name Room 5</span>
                             </a>
                             <span class="price">05</span>
                         </li>

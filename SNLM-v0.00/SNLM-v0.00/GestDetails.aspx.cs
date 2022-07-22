@@ -108,6 +108,14 @@ namespace SNLM_v0._00
             }    
         }
 
+        protected void Guest_Click(object sender, EventArgs e)
+        {
+            SearchGuest.Visible = false;
+            GuestDetails.Visible = true;
+        }
+
+
+
         protected void DropNoOfPersonID_Changed(object sender, EventArgs e)
         {
             if (DropNoOfPersonID.SelectedItem.Value == "Two")
@@ -213,5 +221,18 @@ namespace SNLM_v0._00
             modalContainer.Visible = false;
             gestDetails.Visible = true;
         }
+
+        protected void CancelBtn_Click(object sender, EventArgs e)
+        {
+            SearchGuest.Visible = true;
+            GuestDetails.Visible = false;
+        }
+
+        protected void New_Guest_Click(object sender, EventArgs e)
+        {
+            SearchGuest.Visible = false;
+            GuestDetails.Visible = true;
+        }
+
 
 }}

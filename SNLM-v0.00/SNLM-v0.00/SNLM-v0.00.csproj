@@ -145,6 +145,7 @@
     <Content Include="GestDetails.aspx" />
     <Content Include="images\bk.png" />
     <Content Include="images\img.svg" />
+    <Content Include="images\mtdclogo.png" />
     <Content Include="images\PIKA_MUG.png" />
     <Content Include="Login.aspx" />
     <Content Include="LOGINCSS.css" />

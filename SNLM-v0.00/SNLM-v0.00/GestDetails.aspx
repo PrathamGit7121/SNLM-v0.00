@@ -5,12 +5,54 @@
             <div class="overview-boxes">
                 <div class="box" style="width: auto;">
                     <div class="right-side">
-
+                        <div id="SearchGuest" class="card border-primary" runat="server" visible="true">
+                            <div class="card-header bg-transparent border-primary"><h4>Guest / New Guest</h4></div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="input-group mb-3">
+                                            <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" placeholder="Search Guest.........."></asp:TextBox>
+                                            <div class="input-group-append">
+                                                <asp:Button ID="SearchBtn" CssClass="btn btn-outline-primary" runat="server" Text="Search Guest" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <asp:Button ID="New_Guest" CssClass="btn btn-outline-success" runat="server" Text="New Guest" OnClick="New_Guest_Click" />
+                                    </div>
+                                </div>
+                                <br />
+                                <asp:GridView ID="GridView1" CssClass="Grid" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:TemplateField ShowHeader="true" HeaderText="">
+                                            <ItemTemplate>
+                                                <asp:Button CssClass="btn btn-outline-primary" ID="Guest" runat="server" Text="Select Guest" OnClick="Guest_Click" />
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:BoundField DataField="CustomerName" HeaderText="CustomerName" SortExpression="CustomerName" />
+                                        <asp:BoundField DataField="ArrivedFrom" HeaderText="ArrivedFrom" SortExpression="ArrivedFrom" />
+                                        <asp:BoundField DataField="Occupation" HeaderText="Occupation" SortExpression="Occupation" />
+                                        <asp:BoundField DataField="ContactNo" HeaderText="ContactNo" SortExpression="ContactNo" />
+                                    </Columns>
+                                </asp:GridView>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SNLMConnectionString %>" SelectCommand="SELECT [CustomerName], [ArrivedFrom], [Occupation], [ContactNo] FROM [CustomerDetails]"></asp:SqlDataSource>
+                            </div>
+                        </div>
+    
                         <!--  form start here  -->
 
-                        <div class="card border-primary">
+                        <div id="GuestDetails" class="card border-primary" runat="server" visible="false">
                             <div class="card-header border-primary">
-                                <h5>GEST DETAILS</h5>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5>GUEST DETAILS</h5>
+                                    </div>
+                                    <div class="col-6">
+                                        <div style="text-align: right;" runat="server">
+                                            <asp:Button ID="CancelBtn" CssClass="btn btn-outline-danger" runat="server" Text="Cancel" OnClick="CancelBtn_Click" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-body">
 
@@ -89,7 +131,10 @@
                                             </div>
                                         </div>
 
-                                        <!-- From person "two" to person "Nine" Name and Age Id -->
+                                        
+        <!-------------------------------------- 
+            From person "two" to person "Nine" Name and Age Id 
+        -------------------------------------->
 
                                         <asp:Label ID="Person2" runat="server" Text="" Visible="false">
                                             <div class="form-row">
@@ -174,7 +219,9 @@
                                     </div>
                                 </div>
 
-<!-- Row Three (Arrival from, perpose of visit, date of arival, address to proceding, departure, duration vehical no, id proof) -->
+        <!-------------------------------------- 
+            Row Three (Arrival from, perpose of visit, date of arival, address to proceding, departure, duration vehical no, id proof) 
+        -------------------------------------->
 
                                 <div class="form-row">
                                     <div class="form-group col-md-6"><!--Arriver from-->
@@ -211,7 +258,9 @@
                                     </div>
                                 </div>
                             </div>
-                                <!--Preview Button-->
+        <!-------------------------------------
+            Preview Button
+        -------------------------------------->
                             <div class="card-footer border-primary text-right">
                                 <asp:Button ID="PREVIEWButton" runat="server" Text="Preview" CssClass="btn btn-outline-primary" OnClick="PREVIEWButton_Click" />
                             </div>
@@ -229,8 +278,8 @@
         <div runat="server" class="modal-container" id="modalContainer" visible="false">
             <br />
             <div class="container"><div class="container">
-                <div class="card border-primary text">
-                    <div class="card-header border-primary">
+                <div class="card border-danger text">
+                    <div class="card-header border-danger">
                         <h4>Preview</h4>
                     </div>
         <!-------------------------------------
@@ -340,7 +389,7 @@
             Preview Buttons
         -------------------------------------->
 
-                    <div class="card-footer border-primary text-right">
+                    <div class="card-footer border-danger text-right">
                         <!--Save To Database Button-->
                                 <asp:Button ID="SAVEButton" runat="server" Text="SAVE" CssClass="btn btn-outline-success" OnClick="SAVEButton_Click" />
                                 

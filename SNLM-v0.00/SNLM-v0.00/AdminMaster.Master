@@ -47,7 +47,7 @@
                 <li>
                     <a href="GestDetails.aspx" id="menu2" onclick="selectgd()">
                         <i class='bx bx-list-ul'></i>
-                        <span class="links_name">Gest Detais</span>
+                        <span class="links_name">Guest Detais</span>
                     </a>
                 </li>
                 <li>
@@ -56,7 +56,7 @@
                         <span class="links_name">Bill</span>
                     </a>
                 </li>
-                <li>
+                <li class='disabled'>
                     <a href="Advertise.aspx">
                         <i class='bx bx-heart'></i>
                         <span class="links_name">Advertise page</span>
@@ -97,16 +97,23 @@
         </section>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-        <script>
+        <script type="text/javascript">
 
-            let sidebar = document.querySelector(".sidebar");
-            let sidebarBtn = document.querySelector(".sidebarBtn");
+            var sidebar = document.querySelector(".sidebar");
+            var sidebarBtn = document.querySelector(".sidebarBtn");
             sidebarBtn.onclick = function() {
                 sidebar.classList.toggle("active");
                 if(sidebar.classList.contains("active")){
                     sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
                 }else
                     sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+            function printbill(paravalue) {
+                var backup = document.body.innerHTML;
+                var divcontent = document.getElementById(paravalue).innerHTML;
+                document.body.innerHTML = divcontent;
+                window.print();
+                document.body.innerHTML = backup;
             }
         </script>
         <script src="assets\js\bootstrap.bundle.min.js"></script>

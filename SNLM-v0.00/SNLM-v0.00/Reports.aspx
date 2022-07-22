@@ -67,26 +67,30 @@
 
             </div>
             <div class="sales-boxes" style="width: auto;">
-                <div class="recent-sales box">
-                    <div class="card border-primary">
-                        <div class="card-header">
-                            <h3>USER DETAILS </h3>
-                        </div>
-                        <div class="card-body border-primary">
-                            <asp:GridView ID="GridView1" CssClass="Grid" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                <div class="recent-sales box" style="height:50%; width: 100%; overflow-x: scroll; overflow-y: scroll;">
+                            <asp:GridView ID="GridView1" CssClass="Grid" runat="server" AutoGenerateColumns="False" DataKeyNames="CustomerId" DataSourceID="SqlDataSource1" >
                                 <Columns>
-                                    <asp:BoundField DataField="RefId" HeaderText="Room No." SortExpression="RefId" />
-                                    <asp:BoundField DataField="CustName" HeaderText="Gest Name" SortExpression="CustName" />
-                                    <asp:BoundField DataField="OfflinePmt" HeaderText="Offline Payment" SortExpression="OfflinePmt" />
-                                    <asp:BoundField DataField="OnlinePmt" HeaderText="Online Payment" SortExpression="OnlinePmt" />
-                                    <asp:BoundField DataField="BankName" HeaderText="BaBank Name" SortExpression="BankName" />
-                                    <asp:BoundField DataField="BillAmount" HeaderText="Total Bill" SortExpression="BillAmount" />
+                                    <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
+                                    <asp:BoundField DataField="RoomNo" HeaderText="Room No" SortExpression="RoomNo" />
+                                    <asp:BoundField DataField="CustomerName" HeaderText="Guest Name" SortExpression="CustomerName" />
+                                    <asp:BoundField DataField="ContactNo" HeaderText="Contact No" SortExpression="ContactNo" />
+                                    <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+                                    <asp:BoundField DataField="Nationality" HeaderText="Nationality" SortExpression="Nationality" />
+                                    <asp:BoundField DataField="Occupation" HeaderText="Occupation" SortExpression="Occupation" />
+                                    <asp:BoundField DataField="NoOfPerson" HeaderText="No Of Person" SortExpression="NoOfPerson" />
+                                    <asp:BoundField DataField="DateOfArival" HeaderText="Date Of Arival" SortExpression="DateOfArival" />
+                                    <asp:BoundField DataField="ArrivedFrom" HeaderText="Arrived From" SortExpression="ArrivedFrom" />
+                                    <asp:BoundField DataField="PurposrOfVisit" HeaderText="Purposr Of Visit" SortExpression="PurposrOfVisit" />
+                                    <asp:BoundField DataField="DurationOfDay" HeaderText="Duration Of Day" SortExpression="DurationOfDay" />
+                                    <asp:BoundField DataField="AddressToProceeding" HeaderText="Address To Proceeding" SortExpression="AddressToProceeding" />
+                                    <asp:BoundField DataField="IdProof" HeaderText="Id Proof" SortExpression="IdProof" />
+                                    <asp:BoundField DataField="VehicalNo" HeaderText="Vehical No" SortExpression="VehicalNo" />
+                                    <asp:BoundField DataField="DateOfDeparture" HeaderText="Date Of Departure" SortExpression="DateOfDeparture" />
                                 </Columns>
+                                
                             </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SNLMConnectionString %>" SelectCommand="SELECT [RefId], [CustName], [OfflinePmt], [OnlinePmt], [BankName], [BillAmount] FROM [PaymentDetailss]"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SNLMConnectionString %>" SelectCommand="SELECT * FROM [CustomerDetails]"></asp:SqlDataSource>
                         </div>
-                    </div>
-                </div>
             </div><br />
         </div>
 
